@@ -1,3 +1,17 @@
+/*GLOBAL*/
+body {
+	font-family: 'Arial';
+}
+/*HEADER*/
 header {
-	background-color: red;
+	background-color: #E9EAEA;
+}
+
+.titreHeader {
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: black;
 }
