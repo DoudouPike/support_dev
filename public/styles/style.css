@@ -1,10 +1,8 @@
 /*GLOBAL*/
-
 body {
 	font-family: 'Arial';
 	background: #E9EAEA;
 }
-
 
 .container {
 	max-width: 1200px;
@@ -30,7 +28,6 @@ h3 {
 	clear: both;
 }
 
-
 /*HEADER*/
 
 .header {
@@ -39,23 +36,18 @@ h3 {
 }
 
 .titreHeader {
-	text-align: center;
+	font-size: 3rem;
+	font-weight: bold;
+    color: #3FB29F;
+    margin: 2% 0;
+    text-align: center;
 }
 
 .menu ul li {
 	float: right;
+	margin
 }
 /*HOME*/
-
-a {
-	color: black;
-}
-	
-.link {
-	text-decoration: none;
-	color: black;
-}
-
 .colonne {
 	float: left;
 	width: 25%;
