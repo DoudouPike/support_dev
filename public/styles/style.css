@@ -1,12 +1,9 @@
 /*GLOBAL*/
 
-*{
-	box-sizing: border-box;
-}
-
 body {
 	font-family: 'Arial';
 }
+
 
 .container{
 	max-width: 1200px;
@@ -32,21 +29,27 @@ h3{
 	clear: both;
 }
 
+
 /*HEADER*/
 
 header {
 	background-color: #E9EAEA;
 	background: #F6F4F3;
+	background-color: #FFFFFF;
+	border: 1px solid #E9EAEA;
 }
 
 .titreHeader {
 	text-align: center;
 }
-
-
 /*HOME*/
 
 a{
+	color: black;
+}
+	
+.link {
+	text-decoration: none;
 	color: black;
 }
 
