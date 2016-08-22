@@ -62,14 +62,27 @@ h3 {
 }
 
 .link span {
-	border: 1px solid #204056;
+	border: 3px solid #2B5156;
 	padding: 0 3px 0 1px;
 	border-radius: 3px;
 }
-.titreHeader span {
-	border: 2px solid #34B3A0;
+
+/*.link span {
+	border: 2px solid #2B5156;
 	padding: 1px;
+}*/
+
+.titreHeader a {
+	padding: 1%;
+	padding-right: 0;
+	background-color: #34B3A0;
+	border-radius: 5px;
 }
+
+.titreHeader a:hover {
+	background-color: #204056;
+}
+
 .titreHeader:hover {
 	color: #34B3A0;
 }
@@ -160,14 +173,12 @@ h3 {
 	display: inline-block;
 	font-size: 30px;
 	font-weight: bold;
-	font-style: italic;
 	text-align: center;
 	background: #204056;
 	color: #fff;
 	margin: 0 auto;
 	margin-bottom: 25px;
-	padding: 30px 60px;
-	border-radius:50%;
+	padding: 30px;
 }
 
 .linkHome:hover {
@@ -206,7 +217,7 @@ h3 {
 
 /*LOGIN*/
 label {
-	margin: 0 auto;
+
 }
 
 input[type="text"], input[type="password"], button[type="submit"] {
