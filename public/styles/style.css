@@ -173,12 +173,14 @@ h3 {
 	display: inline-block;
 	font-size: 30px;
 	font-weight: bold;
+	font-style: italic;
 	text-align: center;
 	background: #204056;
 	color: #fff;
 	margin: 0 auto;
 	margin-bottom: 25px;
-	padding: 30px;
+	padding: 30px 60px;
+	border-radius: 50%;
 }
 
 .linkHome:hover {
