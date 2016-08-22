@@ -64,7 +64,7 @@ h3 {
 
 .link span {
 	border: 1px solid #204056;
-	padding: 1px;
+	padding: 0 2px 0 1px;
 }
 
 .menu ul li {
@@ -137,6 +137,30 @@ h3 {
 	transition-duration: 0.3s;
 }
 
+.js-box{
+	display: inline-block;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	background: #204056;
+	color: #fff;
+	margin: 0 auto;
+	margin-bottom: 25px;
+	padding: 50px 4px 0 50px;
+}
+
+.php-box{
+	display: inline-block;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	background: #204056;
+	color: #fff;
+	margin: 0 auto;
+	margin-bottom: 25px;
+	padding: 30px;
+}
+
 .linkHome:hover {
 	background: #34B3A0;
 	color: #fff;
@@ -160,6 +184,7 @@ h3 {
 	font-size: 80px;
 	margin-bottom: 30px;
 }
+
 
 /*FOOTER*/
 
