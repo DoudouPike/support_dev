@@ -2,16 +2,21 @@
 body {
 	font-family: 'Arial';
 }
+
 /*HEADER*/
 header {
-	background-color: #E9EAEA;
+	background-color: #FFFFFF;
+	border: 1px solid #E9EAEA;
 }
 
 .titreHeader {
 	text-align: center;
 }
 
-a {
+.loginHeader {
+	
+}
+.link {
 	text-decoration: none;
 	color: black;
 }
