@@ -42,17 +42,22 @@ h3 {
 
 /*HEADER*/
 
+.header {
+	background-color: #fff;
+	height: 72px;
+}
+
 .header h1 {
 	line-height: ;
 	background-color: #FFFFFF;
-	border: 1px solid #E9EAEA;
+/*	border: 1px solid #E9EAEA;*/
 }
 
 .titreHeader {
 	font-size: 3rem;
 	font-weight: bold;
     color: #204056;
-    text-align: center;
+    float: left;
     height: 1%;
     padding: 1%;
 }
@@ -61,8 +66,12 @@ h3 {
 	float: right;
 }
 
+.loginHeader {
+	margin-top: 16px;
+	margin-right: 1.5%;
+}
+
 .loginHeader a {
-	display: block;
 	text-decoration: none;
 	color: #fff;
 }
