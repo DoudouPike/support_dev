@@ -20,7 +20,7 @@ h2 {
 h3 {
 	text-align: center;
 	font-size: 25px;
-	margin-bottom: 120px;
+	margin-bottom: 20px;
 	margin-top: 30px;
 	/*color: #34B3A0;*/
 }
@@ -88,6 +88,8 @@ h3 {
 }
 
 /*HOME*/
+
+
 .linkh {
 	text-decoration: none;
 	color: black;
@@ -136,6 +138,11 @@ h3 {
 	border-top: 2px solid #FFF;
 	border-bottom: 2px solid #FFF;
 	padding: 10px;
+}
+
+.icon{
+	font-size: 80px;
+	margin-bottom: 30px;
 }
 
 /*FOOTER*/
