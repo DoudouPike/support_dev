@@ -6,19 +6,19 @@ body {
 }
 
 
-.container{
+.container {
 	max-width: 1200px;
 	margin: 0 auto;
 }
 
-h2{
+h2 {
 	font-size: 34px;
 	color: #34B3A0;
 	margin: 30px 0 150px 0;
 	text-align: center;
 }
 
-h3{
+h3 {
 	text-align: center;
 	font-size: 25px;
 	margin-bottom: 120px;
@@ -43,9 +43,13 @@ header {
 .titreHeader {
 	text-align: center;
 }
+
+.menu ul li {
+	float: right;
+}
 /*HOME*/
 
-a{
+a {
 	color: black;
 }
 	
@@ -54,7 +58,7 @@ a{
 	color: black;
 }
 
-.colonne{
+.colonne {
 	float: left;
 	width: 25%;
 	height: 350px;
@@ -63,7 +67,7 @@ a{
 	box-shadow: 1px 1px 5px grey;
 }
 
-.colonne2{
+.colonne2 {
 	float: right;
 	width: 25%;
 	height: 350px;
@@ -72,18 +76,19 @@ a{
 	box-shadow: 1px 1px 5px grey;
 }
 
-.linkHome{
+.linkHome {
 	background: #fff;
 	text-align: center;
 	transition-property: background;
 	transition-duration: 0.3s;
 }
 
-.linkHome:hover{
+.linkHome:hover {
 	background: #34B3A0;
 	color: #fff;
 	/*padding: 25px;*/
 }
+
 
 .border{
 	width: 60%;
@@ -91,7 +96,7 @@ a{
 	margin: 50px auto;
 }
 
-.linkHome p{
+.linkHome p {
 	border-top: 2px solid #FFF;
 	border-bottom: 2px solid #FFF;
 	padding: 10px;
@@ -99,7 +104,7 @@ a{
 
 /*FOOTER*/
 
-.footer{
+.footer {
 	text-align: center;
 	margin: 100px;
 }
