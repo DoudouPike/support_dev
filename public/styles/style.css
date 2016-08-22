@@ -60,7 +60,7 @@ a {
 	float: left;
 	width: 25%;
 	height: 350px;
-	margin-left: 200px;
+	margin-left: 250px;
 	padding: 20px;
 	box-shadow: 1px 1px 5px grey;
 }
@@ -69,7 +69,7 @@ a {
 	float: right;
 	width: 25%;
 	height: 350px;
-	margin-right: 200px;
+	margin-right: 250px;
 	padding: 20px;
 	box-shadow: 1px 1px 5px grey;
 }
@@ -89,7 +89,7 @@ a {
 
 
 .border{
-	width: 60%;
+	width: 50%;
 	border: 1px solid #34B3A0;
 	margin: 50px auto;
 }
