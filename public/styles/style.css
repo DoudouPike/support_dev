@@ -33,9 +33,7 @@ h3 {
 
 /*HEADER*/
 
-header {
-	background-color: #E9EAEA;
-	background: #F6F4F3;
+.header {
 	background-color: #FFFFFF;
 	border: 1px solid #E9EAEA;
 }
