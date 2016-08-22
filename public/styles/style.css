@@ -2,6 +2,7 @@
 
 body {
 	font-family: 'Arial';
+	background: #E9EAEA;
 }
 
 
@@ -12,7 +13,7 @@ body {
 
 h2{
 	font-size: 34px;
-	color: #99E1D4;
+	color: #34B3A0;
 	margin: 30px 0 150px 0;
 	text-align: center;
 }
@@ -22,7 +23,7 @@ h3{
 	font-size: 25px;
 	margin-bottom: 120px;
 	margin-top: 30px;
-	/*color: #99E1D4;*/
+	/*color: #34B3A0;*/
 }
 
 .clearfix{
@@ -79,14 +80,14 @@ a{
 }
 
 .linkHome:hover{
-	background: #99E1D4;
+	background: #34B3A0;
 	color: #fff;
 	/*padding: 25px;*/
 }
 
 .border{
 	width: 80%;
-	border: 1px solid #99E1D4;
+	border: 1px solid #34B3A0;
 	margin: 50px auto;
 }
 
