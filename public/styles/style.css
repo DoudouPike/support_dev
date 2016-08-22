@@ -47,7 +47,13 @@ h3 {
 	float: right;
 	margin
 }
+
 /*HOME*/
+.linkh {
+	text-decoration: none;
+	color: black;
+}
+
 .colonne {
 	float: left;
 	width: 25%;
