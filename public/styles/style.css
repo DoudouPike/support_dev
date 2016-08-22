@@ -45,13 +45,12 @@ h3 {
 .menu ul li {
 	float: right;
 }
+
 /*HOME*/
 
-a {
-	color: black;
-}
+
 	
-.link {
+.linkh {
 	text-decoration: none;
 	color: black;
 }
