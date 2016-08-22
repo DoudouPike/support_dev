@@ -30,9 +30,6 @@ h3 {
 	color: inherit;
 }
 
-.link:hover {
-	color: #34B3A0;
-}
 
 .clearfix:after {
 	content: "";
@@ -63,8 +60,13 @@ h3 {
 }
 
 .titreHeader span {
-	border: 1px solid #204056;
+	border: 2px solid #34B3A0;
 	padding: 1px;
+	border-radius: 3px;
+}
+
+.titreHeader:hover {
+	color: #34B3A0;
 }
 
 .menu ul li {
