@@ -56,25 +56,25 @@ a{
 
 .colonne{
 	float: left;
-	width: 35%;
-	height: 450px;
-	margin-left: 100px;
+	width: 25%;
+	height: 350px;
+	margin-left: 200px;
 	padding: 20px;
 	box-shadow: 1px 1px 5px grey;
 }
 
 .colonne2{
 	float: right;
-	width: 35%;
-	height: 450px;
-	margin-right: 100px;
+	width: 25%;
+	height: 350px;
+	margin-right: 200px;
 	padding: 20px;
 	box-shadow: 1px 1px 5px grey;
 }
 
 .linkHome{
 	background: #fff;
-	text-align: justify;
+	text-align: center;
 	transition-property: background;
 	transition-duration: 0.3s;
 }
@@ -86,7 +86,7 @@ a{
 }
 
 .border{
-	width: 80%;
+	width: 60%;
 	border: 1px solid #34B3A0;
 	margin: 50px auto;
 }
