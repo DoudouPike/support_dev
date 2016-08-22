@@ -34,7 +34,9 @@ h3 {
 	color: #66DFCB;
 }
 
-.clearfix {
+.clearfix:after {
+	content: "";
+	display: block;
 	clear: both;
 }
 
