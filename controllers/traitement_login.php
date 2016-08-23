@@ -47,7 +47,7 @@ if(isset($_POST["name"], $_POST["pwd"]))
 		{
 			$_SESSION["admin"] = $name;
 
-			header("Location: index.php?page=home");
+			header("Location: index.php");
 			exit;	
 		}
 	}

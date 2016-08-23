@@ -19,11 +19,12 @@
 
     <fieldset>
 
-      <form action="javascript:void(0);" method="get">
+      <!-- <form action="javascript:void(0);" method="post"> -->
+      <form method="post">
 
-        <input type="email" required value="Email" onBlur="if(this.value=='')this.value='Email'" onFocus="if(this.value=='Email')this.value='' "> <!-- JS because of IE support; better: placeholder="Email" -->
+        <input type="text" name="name" required value="Identifiant" onBlur="if(this.value=='')this.value='Identifiant'" onFocus="if(this.value=='Identifiant')this.value='' "> <!-- JS because of IE support; better: placeholder="Email" -->
 
-        <input type="password" required value="Password" onBlur="if(this.value=='')this.value='Password'" onFocus="if(this.value=='Password')this.value='' "> <!-- JS because of IE support; better: placeholder="Password" -->
+        <input type="password" name="pwd" required value="Password" onBlur="if(this.value=='')this.value='Password'" onFocus="if(this.value=='Password')this.value='' "> <!-- JS because of IE support; better: placeholder="Password" -->
 
         <input type="submit" value="Entrer">
 
