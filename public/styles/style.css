@@ -63,16 +63,7 @@ h2 {
 .titreHeader a {
 	padding: 1%;
 	padding-right: 0;
-	background-color: #34B3A0;
 	border-radius: 5px;
-}
-
-.titreHeader a:hover {
-	background-color: #204056;
-}
-
-.titreHeader:hover {
-	color: #34B3A0;
 }
 
 .titreHeader span {
@@ -226,12 +217,36 @@ article h3 {
 .sous-cat{
 	text-align: left;
 	font-size: 25px;
+	margin-bottom: 10px;
+	padding-top: 40px;
 }
 
 .box-sc{
 	background: #fff;
+	color: #204056;
 	padding: 40px;
-	margin: 30px;
+	margin-bottom: 5px;
+	box-shadow: 1px 1px 5px #CCC;
+	transition-property: background;
+	transition-duration: 0.3s;
+}
+
+.icon-cat{
+	font-size: 30px;
+	margin-right: 10px;
+	padding: 20px;
+	border-radius: 50%;
+	background: #E9EAEA;
+}
+
+.box-sc:hover{
+	background: #34B3A0;
+	color: #fff;
+}
+
+.box-sc:hover .icon-cat{
+	background: #fff;
+	color: #34B3A0;
 }
 
 
