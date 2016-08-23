@@ -173,6 +173,18 @@ h3 {
 	/*padding: 25px;*/
 }
 
+.linkHome:hover .js-box{
+	background: #fff;
+	color: #34B3A0;
+	/*padding: 25px;*/
+}
+
+.linkHome:hover .php-box{
+	background: #fff;
+	color: #34B3A0;
+	/*padding: 25px;*/
+}
+
 
 .border{
 	width: 50%;
