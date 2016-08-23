@@ -1,7 +1,10 @@
 /*GLOBAL*/
 
 body {
-	font-family: 'Arial';
+	/*font-family: 'Arial';*/
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	/*font-family: 'Poiret One', cursive;*/
+	font-size: 18px;
 	background: #E9EAEA;
 }
 
@@ -36,7 +39,7 @@ h2 {
 
 .header {
 	background-color: #fff;
-	height: 72px;
+	height: 80px;
 }
 
 .header h1 {
@@ -46,6 +49,7 @@ h2 {
 }
 
 .titreHeader {
+	font-family: 'Poiret One', cursive;
 	font-size: 3rem;
 	font-weight: bold;
     color: #204056;
@@ -68,7 +72,7 @@ h2 {
 
 .titreHeader span {
 	border: 2px solid #34B3A0;
-	padding: 1px;
+	padding: 1px 4px 1px 0;
 }
 
 .menu ul li {
@@ -76,7 +80,7 @@ h2 {
 }
 
 .loginHeader {
-	margin-top: 26px;
+	margin-top: 30px;
 	margin-right: 1.5%;
 }
 
@@ -158,13 +162,15 @@ article h3 {
 	color: #fff;
 	margin: 0 auto;
 	margin-bottom: 25px;
-	padding: 50px 4px 0 50px;
+	padding: 40px 4px 0 50px;
 }
 
 .php-box{
 	display: inline-block;
+	font-family: Arial;
 	font-size: 30px;
 	font-weight: bold;
+	font-style: italic;
 	text-align: center;
 	background: #204056;
 	color: #fff;
@@ -217,8 +223,15 @@ article h3 {
 .sous-cat{
 	text-align: left;
 	font-size: 25px;
+	color: #204056;
 	margin-bottom: 10px;
-	padding-top: 40px;
+	margin-top: 20px;
+}
+
+.border-h{
+	width: 100%;
+	margin-top: 60px;
+	border-bottom: 1px solid grey;
 }
 
 .box-sc{
