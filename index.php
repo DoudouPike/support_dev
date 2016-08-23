@@ -5,7 +5,7 @@ session_start();
 $error = "";
 
 $page = "home";
-$access = ["home", "login", "html", "cours"]; //ajouter les autres pages
+$access = ["home", "login", "html", "css", "js", "php", "cours"]; //ajouter les autres pages
 
 if(isset($_GET["page"]) && in_array($_GET["page"], $access))
 {
