@@ -62,27 +62,14 @@ h3 {
 }
 
 .link span {
-	border: 3px solid #2B5156;
+	border: 1px solid #204056;
 	padding: 0 3px 0 1px;
 	border-radius: 3px;
 }
-
-/*.link span {
-	border: 2px solid #2B5156;
+.titreHeader span {
+	border: 2px solid #34B3A0;
 	padding: 1px;
-}*/
-
-.titreHeader a {
-	padding: 1%;
-	padding-right: 0;
-	background-color: #34B3A0;
-	border-radius: 5px;
 }
-
-.titreHeader a:hover {
-	background-color: #204056;
-}
-
 .titreHeader:hover {
 	color: #34B3A0;
 }
@@ -180,7 +167,7 @@ h3 {
 	margin: 0 auto;
 	margin-bottom: 25px;
 	padding: 30px 60px;
-	border-radius: 50%;
+	border-radius:50%;
 }
 
 .linkHome:hover {
@@ -215,23 +202,4 @@ h3 {
 	margin-top: 100px;
 	padding: 100px;
 	background: #D4D5D6;
-}
-
-/*LOGIN*/
-label {
-
-}
-
-input[type="text"], input[type="password"], button[type="submit"] {
-  display: block;
-  margin: 0 auto;
-  width: 40%;
-  font-family: sans-serif;
-  font-size: 18px;
-  appearance: none;
-  box-shadow: none;
-  border-radius: none;
-}
-input[type="text"]:focus {
-  outline: none;
 }
