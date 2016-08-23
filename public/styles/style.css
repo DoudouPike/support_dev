@@ -154,14 +154,14 @@ article h3 {
 
 .js-box{
 	display: inline-block;
-	font-size: 40px;
+	font-size: 60px;
 	font-weight: bold;
 	text-align: center;
 	background: #204056;
 	color: #fff;
 	margin: 0 auto;
 	margin-bottom: 25px;
-	padding: 40px 4px 0 50px;
+	padding: 30px 6px 0 40px;
 }
 
 .php-box{
@@ -216,8 +216,7 @@ article h3 {
 	margin-bottom: 30px;
 }
 
-
-/*HTML*/
+/*CATEGORIES*/
 .sous-cat{
 	text-align: left;
 	font-size: 25px;
