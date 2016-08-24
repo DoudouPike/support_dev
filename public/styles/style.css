@@ -198,13 +198,13 @@ article h3 {
 .border{
 	width: 50%;
 	border: 1px solid #34B3A0;
-	margin: 50px auto;
+	margin: 2% auto;
 }
 
 .linkHome p {
 	border-top: 2px solid #FFF;
 	border-bottom: 2px solid #FFF;
-	padding: 10px;
+	padding: 5%;
 }
 
 .icon{
