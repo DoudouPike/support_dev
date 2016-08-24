@@ -12,7 +12,6 @@ body {
 	margin: 0 auto;
 }
 
-
 h2 {
 	font-size: 34px;
 	color: #204056;
@@ -20,12 +19,10 @@ h2 {
 	text-align: center;
 }
 
-
 .link {
 	text-decoration: none;
 	color: inherit;
 }
-
 
 .clearfix:after {
 	content: "";
@@ -33,9 +30,7 @@ h2 {
 	clear: both;
 }
 
-
 /*HEADER*/
-
 .header {
 	background-color: #fff;
 	height: 80px;
@@ -110,9 +105,7 @@ h2 {
   text-decoration: none;
 }
 
-
 /*HOME*/
-
 article h3 {
 	text-align: center;
 	font-size: 25px;
@@ -198,7 +191,6 @@ article h3 {
 	/*padding: 25px;*/
 }
 
-
 .border{
 	width: 50%;
 	border: 1px solid #34B3A0;
@@ -261,7 +253,6 @@ article h3 {
 
 
 /*FOOTER*/
-
 .footer {
 	text-align: center;
 	margin-top: 100px;
@@ -273,18 +264,6 @@ article h3 {
 }
 
 /*LOGIN*/
-/*@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,900);
-@import url(http://weloveiconfonts.com/api/?family=entypo);
-html, body {
-  padding: 0;
-  margin: 0;
-  background-image: linear-gradient(135deg, rgba(155, 89, 182, 0.8) 0%, rgba(211, 84, 0, 0.8) 100%), url("http://www.hdbackgroundpoint.com/wp-content/uploads/2014/05/24/453.jpeg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
-}
-*/
 .containerLogin {
 	height: 80vh;
 }
@@ -301,7 +280,7 @@ form {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: auto;
-  background: white;
+  background: #fff;
   border-radius: 4px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   min-width: 300px;
@@ -322,42 +301,46 @@ input {
   -webkit-flex: 10 10 1px;
   flex: 10 10 1px;
 }
+
 input:focus {
   outline: none;
 }
+
 input:focus + label:after {
   color: #666;
 }
+
 input#username {
   border-radius: 4px 0 0 4px;
 }
-input[type="submit"] {
+
+.submitButton {
   -webkit-flex: 0 0 100px;
   flex: 0 0 100px;
-  background: #ED6F70;
+  background: #34B3A0;
   border: 0;
   border-radius: 0 4px 4px 0;
-  font-family: Roboto;
+  font-family: inherit;
   color: white;
   padding: 0;
-  text-transform: lowercase;
   letter-spacing: 2px;
-  font-size: 14px;
+  font-size: 1.5rem;
   line-height: 8px;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
 
 label {
   font-size: 0;
 }
+
 label[for="username"] {
   -webkit-flex: 0 0 30px;
   flex: 0 0 30px;
 }
+
 label[for="username"]:after, label[for="password"]:after {
-  content: '\1F464';
-  font-family: entypo;
+  content: '\f007';
+  font-family: "FontAwesome";
   position: absolute;
   top: 50%;
   left: 13px;
@@ -366,6 +349,7 @@ label[for="username"]:after, label[for="password"]:after {
   margin-top: -10px;
   color: #ccc;
 }
+
 label[for="password"]:before {
   position: absolute;
   top: 50%;
@@ -381,9 +365,10 @@ label[for="password"]:before {
   -webkit-transform: rotate(15deg);
   transform: rotate(15deg);
 }
+
 label[for="password"]:after {
-  content: '\1F512';
-  left: calc(50% - 15px);
+  content: '\f084';
+  left: calc(50% - 25px);
 }
 
 ::-webkit-input-placeholder {
@@ -403,3 +388,15 @@ label[for="password"]:after {
 :-ms-input-placeholder {
   color: #ccc;
 }
+
+/*TABLETTE*/
+/*@media screen and (max-width:950px) {
+	.colonne, .colonne2 {
+		float: none;
+	}
+}*/
+
+/*PHONE*/
+/*@media screen and (max-width:700px) {
+
+}*/
