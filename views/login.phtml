@@ -1,29 +1,16 @@
-<!-- <h2>Connexion :</h2>
-<form method="POST">
-
-	<div><?= $error ?></div>
-
-	<label for="name">Identifiant Administrateur :</label>
-	<input type="text" name="name" id="name">
-
-	<label for="pwd">Mot de passe Administrateur :</label>
-	<input type="password" name="pwd" id="pwd">
-
-	<button type="submit">Connexion</button>
-	
-</form> -->
 <div class="containerLogin">
-	<h2>Login</h2>
-	<form method="post" action="traitement_login.php" enctype="multipart/form-data">
-	  
-	  <input name="username" placeholder="LOGIN" id="username" />
-	  <label for="username">Username</label>
-	  
-	  
-	  <input name="password" placeholder="PASSWORD" id="password" />
-	  <label for="password">Password</label>
-	  
-	  
-	  <input class="submitButton" type="submit" value="ENTRER" />
+	<h2>Connexion :</h2>
+	<form method="POST">
+
+		<div><?= $error ?></div>
+
+		<label for="name">Identifiant Administrateur :</label>
+		<input type="text" name="name" id="name">
+
+		<label for="pwd">Mot de passe Administrateur :</label>
+		<input type="password" name="pwd" id="pwd">
+
+		<input type="submit">
+		
 	</form>
 </div>

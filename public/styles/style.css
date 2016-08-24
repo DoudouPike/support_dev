@@ -311,11 +311,11 @@ input:focus + label:after {
   color: #666;
 }
 
-input#username {
+input#name {
   border-radius: 4px 0 0 4px;
 }
 
-.submitButton {
+input[type="submit"] {
   -webkit-flex: 0 0 100px;
   flex: 0 0 100px;
   background: #34B3A0;
@@ -334,12 +334,12 @@ label {
   font-size: 0;
 }
 
-label[for="username"] {
+label[for="name"] {
   -webkit-flex: 0 0 30px;
   flex: 0 0 30px;
 }
 
-label[for="username"]:after, label[for="password"]:after {
+label[for="name"]:after, label[for="pwd"]:after {
   content: '\f007';
   font-family: "FontAwesome";
   position: absolute;
@@ -351,7 +351,7 @@ label[for="username"]:after, label[for="password"]:after {
   color: #ccc;
 }
 
-label[for="password"]:before {
+label[for="pwd"]:before {
   position: absolute;
   top: 50%;
   left: calc(50% - 40px);
@@ -367,7 +367,7 @@ label[for="password"]:before {
   transform: rotate(15deg);
 }
 
-label[for="password"]:after {
+label[for="pwd"]:after {
   content: '\f084';
   left: calc(50% - 25px);
 }
