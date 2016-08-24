@@ -280,7 +280,7 @@ form {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: auto;
-  background: white;
+  background: #fff;
   border-radius: 4px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   min-width: 300px;
@@ -314,7 +314,7 @@ input#username {
   border-radius: 4px 0 0 4px;
 }
 
-input[type="submit"] {
+.submitButton {
   -webkit-flex: 0 0 100px;
   flex: 0 0 100px;
   background: #34B3A0;
@@ -326,7 +326,6 @@ input[type="submit"] {
   letter-spacing: 2px;
   font-size: 1.5rem;
   line-height: 8px;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
 
