@@ -123,20 +123,23 @@ article h3 {
 .colonne {
 	float: left;
 	width: 25%;
+	min-width: 182px;
 	height: 350px;
 	margin-left: 22%;
-	padding: 3%;
+	padding-bottom: auto;
 	box-shadow: 1px 1px 5px grey;
 }
 
 .colonne2 {
 	float: right;
 	width: 25%;
+	min-width: 182px;
 	height: 350px;
 	margin-right: 22%;
-	padding: 3%;
+	padding-bottom: auto;
 	box-shadow: 1px 1px 5px grey;
 }
+
 
 .linkHome {
 	background: #fff;
@@ -391,21 +394,21 @@ label[for="pwd"]:after {
 }
 
 /*TABLETTE*/
-@media screen and (max-width:1070px) {
+/*@media screen and (max-width:1070px) {
 	.colonne, .colonne2 {
 		background-color: red;
 		height: auto;
 		
 	}
-}
+}*/
 
 /*PHONE*/
 @media screen and (max-width:700px) {
 	.colonne, .colonne2 {
-		background-color: green;
-		
+		float: none;
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+		font-size: 1.8rem;
 	}
 }
-/*@media screen and (max-width:700px) {
-
-}*/
