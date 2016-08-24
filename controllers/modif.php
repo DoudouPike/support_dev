@@ -1,3 +1,3 @@
 <?php
-require("views/modif.phtml");
+	require("views/modif.phtml");
 ?>

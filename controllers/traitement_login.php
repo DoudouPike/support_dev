@@ -42,13 +42,12 @@ if(isset($_POST["name"], $_POST["pwd"]))
 		{
 			$error = "L'identifiant ou le mot de passe est incorrecte !";
 		}
-
 		else
 		{
 			$_SESSION["admin"] = $name;
 
-			header("Location: index.php");
-			exit;	
+			header("Location: index.php?page=home");
+			exit;
 		}
 	}
 }

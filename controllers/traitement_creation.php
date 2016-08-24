@@ -1,5 +1,12 @@
 <?php
 
+// if(empty($_SESSION)){
+// 	header("Location: index.php?page=home");
+// 	exit;
+// }
+
+
+
 if(isset($_POST["id"], $_POST["titre"], $_POST["contenu"], $_POST["objectif"], $_POST["choixLangage"], $_POST["choixCategorie"])){
 
 	$id = $_POST["id"];
