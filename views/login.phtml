@@ -12,28 +12,17 @@
 	<button type="submit">Connexion</button>
 	
 </form> -->
-
-<div id="login-form">
-
-    <h3>Login</h3>
-
-    <fieldset>
-
-      <!-- <form action="javascript:void(0);" method="post"> -->
-      <form method="post">
-
-        <input type="text" name="name" required value="Identifiant" onBlur="if(this.value=='')this.value='Identifiant'" onFocus="if(this.value=='Identifiant')this.value='' "> <!-- JS because of IE support; better: placeholder="Email" -->
-
-        <input type="password" name="pwd" required value="Password" onBlur="if(this.value=='')this.value='Password'" onFocus="if(this.value=='Password')this.value='' "> <!-- JS because of IE support; better: placeholder="Password" -->
-
-        <input type="submit" value="Entrer">
-
-        <footer class="clearfix">
-
-        </footer>
-
-      </form>
-
-    </fieldset>
-
-  </div> <!-- end login-form -->
+<div class="containerLogin">
+	<form>
+	  
+	  <input name="username" placeholder="username" id="username" />
+	  <label for="username">Username</label>
+	  
+	  
+	  <input name="password" placeholder="password" id="password" />
+	  <label for="password">Password</label>
+	  
+	  
+	  <input type="submit" value="Log In" />
+	</form>
+</div>
