@@ -7,9 +7,9 @@
 
 
 
-if(isset($_POST["id"], $_POST["titre"], $_POST["contenu"], $_POST["objectif"], $_POST["choixLangage"], $_POST["choixCategorie"])){
+if(isset($_POST["titre"], $_POST["contenu"], $_POST["objectif"], $_POST["choixLangage"], $_POST["choixCategorie"])){
 
-	$id = $_POST["id"];
+	$id = 0;
 	$titre = $_POST["titre"];
 	$contenu = $_POST["contenu"];
 	$objectif = $_POST["objectif"];
@@ -28,6 +28,11 @@ if(isset($_POST["id"], $_POST["titre"], $_POST["contenu"], $_POST["objectif"], $
 			if ($intro[$j]['titre'] === $titre) {
 				$encodageJson = false;
 				var_dump("Ce titre est déjà existant dans cette categorie");
+			}
+
+			if ($intro[$j]['id'] === $id) {
+				$encodageJson = false;
+				var_dump("Cet id est déjà utilisé dans cette categorie");
 			}
 		}
 
