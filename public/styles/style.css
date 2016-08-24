@@ -198,13 +198,13 @@ article h3 {
 .border{
 	width: 50%;
 	border: 1px solid #34B3A0;
-	margin: 50px auto;
+	margin: 2% auto;
 }
 
 .linkHome p {
 	border-top: 2px solid #FFF;
 	border-bottom: 2px solid #FFF;
-	padding: 10px;
+	padding: 5%;
 }
 
 .icon{
@@ -287,7 +287,6 @@ form {
   background: #fff;
   border-radius: 4px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  min-width: 300px;
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: space-between;
@@ -411,4 +410,9 @@ label[for="pwd"]:after {
 		width: 100%;
 		font-size: 1.8rem;
 	}
+
+	.box-sc {
+		font-size: 1.8rem;
+	}
+
 }
