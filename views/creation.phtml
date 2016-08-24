@@ -3,14 +3,39 @@
 </div>
 <div>
 	<h1>Création</h1>
-    <form method="post">
+    <form method="post" align="center">
+        <div>
+            <input type="text" name="id" placeholder="Votre Id" value="1" required="required" />
+        </div>
+<br>
     	<div>
     		<input type="text" name="titre" placeholder="Votre titre" value="" required="required" />
     	</div>
-    	
+<br>	
     	<div>
     		<input type="textarea" name="contenu" value="" placeholder="Votre texte içi" required="required" />
     	</div>
+<br>
+        <div>
+            <input type="textarea" name="objectif" value="" placeholder="Votre objectif içi" required="required" />
+        </div>
+<br>
+        <label for="Langage">Langage : </label>
+        <select name="choixLangage" id="Langage">
+            <option value="0">Sélectionnez votre Langage</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="php" selected>PHP</option>
+        </select>
+
+        <label for="Categorie">Categorie : </label>
+        <select name="choixCategorie" id="Categorie">
+            <option value="0">Sélectionnez votre Categorie</option>
+            <option value="introduction" selected>introduction</option>
+            <option value="step1">Step 1</option>
+            <option value="step2">Step 2</option>
+            <option value="step3">Step 3</option>
+        </select>
         
         <button type="submit" name="register" class="btn btn-primary btn-block btn-large">M'enregistrer</button>
     </form>
