@@ -21,20 +21,24 @@ if(isset($_POST["id"], $_POST["titre"], $_POST["contenu"], $_POST["objectif"], $
 		$file = $langage.'.json';
 		$json = file_get_contents($file);
 		$bdd = json_decode($json, true);
+		$intro = $bdd[$categorie];
 		$encodageJson = true;
-
-		for ($j = 0; $j < sizeof($bdd); $j++){
+		for ($j = 0; $j < sizeof($intro); $j++){
 			
-			if ($bdd[$j]['titre'] === $titre) {
+			if ($intro[$j]['titre'] === $titre) {
 				$encodageJson = false;
-				var_dump("Ce titre est déjà existant");
+				var_dump("Ce titre est déjà existant dans cette categorie");
 			}
 		}
 
-		if($encodageJson){
-			var_dump("OK");	
-			array_push($bdd, array('id' => $id, 'titre' => $titre, 'contenu' => $contenu, 'objectif' => $objectif, 'categorie' => $categorie, 'langage' => $langage));
 
+		if($encodageJson){
+			var_dump("OK");
+
+		array_push($intro, array('id' => $id, 'titre' => $titre, 'contenu' => $contenu, 'objectif' => $objectif, 'categorie' => $categorie));
+
+
+			$bdd[$categorie] = $intro;
 			$json_data = json_encode($bdd); 
 			file_put_contents($file, $json_data);
 		}

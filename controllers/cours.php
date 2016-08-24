@@ -1,6 +1,6 @@
 <?php
 
-$json = file_get_contents("html.json");
+$json = file_get_contents($page.".json");
 $stock = json_decode($json, true);
 
 for ($i = 0; $i < sizeof($stock); $i++)
