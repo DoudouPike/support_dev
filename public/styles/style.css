@@ -388,3 +388,13 @@ label[for="password"]:after {
 :-ms-input-placeholder {
   color: #ccc;
 }
+
+/*TABLETTE*/
+/*@media screen and (max-width:900px) {
+	
+}*/
+
+/*PHONE*/
+/*@media screen and (max-width:700px) {
+
+}*/
