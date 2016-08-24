@@ -1,14 +1,30 @@
-[
-   {
-      "id":1,
-      "titre":"HTML? C'est contagieux?",
-      "objectif":"Comprendre ce qu'est le HTML et à quoi ça sert",
-      "contenu":"Le HTML est le langage web.. patati"
-   },
-   {
-      "id":2,
-      "titre":"Comment ça marche ?",
-      "objectif":"Première balise",
-      "contenu":"truc truc truc"
-   }
-]
+{
+   "intro":[
+      {
+         "id":"1",
+         "titre":"titre intro 1",
+         "objectif":"objectif intro 1",
+         "contenu":"contenu intro 1"         
+      },
+      {
+         "id":"2",
+         "titre":"titre intro 2",
+         "objectif":"objectif intro 2",
+         "contenu":"contenu intro 2"
+      }
+   ],
+   "step1":[
+      {
+         "id":"1",
+         "titre":"titre step1 1",
+         "objectif":"objectif step1 1",
+         "contenu":"contenu step1 1"         
+      },
+      {
+         "id":"2",
+         "titre":"titre step1 2",
+         "objectif":"objectif step1 2",
+         "contenu":"contenu step1 2"
+      }
+   ]
+}

@@ -1,12 +1,17 @@
-<h2><?= $titre ?></h2>
+<div class="container">
 
-<div class="objectifs">
-	<h3>Les objectifs de ce cours :</h3>
-	<p><?= $objectif ?></p>
-</div>
+	<h2><?= $_GET["lang"] ?></h2>
 
-<hr>
+	<div class="border-h"></div>
 
-<div class="contenu">
-	<p><?= $contenu ?></p>
+		<h3 class="sous-cat">Introduction</h3>
+
+		<?php require("controllers/bloc-cours.php"); ?>
+
+		<h3 class="sous-cat">Step 1</h3>
+
+		<?php require("controllers/bloc-cours.php"); ?>
+		
+	</div>
+
 </div>

@@ -1,24 +1,13 @@
 <?php
 
-$json = file_get_contents("html.json");
-$stock = json_decode($json, true);
+$json = file_get_contents($_GET["lang"].".json");
+$bdd = json_decode($json, true);
 
-for ($i = 0; $i < sizeof($stock); $i++)
-{ 
-	if($stock[$i]["id"] == $_GET["id"])
-	{
-		$titre = $stock[$i]["titre"];
-		$objectif = $stock[$i]["objectif"];
-		$contenu = $stock[$i]["contenu"];
-	}
-}
+$bddIntro = $bdd["intro"];
+$bddStep1 = $bdd["step1"];
 
-if( isset($titre, $objectif, $contenu) )
-{
-	require("views/cours.phtml");
-}
-else
-{
-	require("controllers/404.php");
-}
+var_dump($bdd);
+
+require("views/cours.phtml");
+
 ?>
