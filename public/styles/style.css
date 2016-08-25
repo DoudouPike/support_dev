@@ -262,52 +262,6 @@ article h3 {
 }
 
 
-/*404*/
-
-.found-box{
-	margin: 50px auto;
-	padding: 50px;
-	background: #fff;
-	width: 50%;
-	box-shadow: 1px 1px 5px grey;
-	margin-bottom: 0;
-}
-
-.notFound{
-	font-size: 160px;
-	color: #34B3A0;
-	text-align: center;
-}
-
-.p-found{
-	text-align: center;
-	color: #204056;
-	margin: 10px;
-}
-
-.return{
-	color: #204056;
-	display: inline-block;
-	margin-left: 5%;
-}
-
-.link-backHome{
-	margin-left: 40%;
-}
-
-.backHome{
-	display: inline-block;
-	text-align: center;
-	color: #fff;
-	/*margin-left: 40%;*/
-	background: #34B3A0;
-	border-radius: 50%;
-	padding: 30px;
-}
-
-.found-box a:hover .backHome{
-	background: #ccc;
-}
 
 
 /*LOGIN*/
@@ -434,6 +388,59 @@ label[for="pwd"]:after {
 
 :-ms-input-placeholder {
   color: #ccc;
+}
+
+
+/*404*/
+
+.found-box{
+	margin: 70px auto 0;
+	padding: 50px;
+	background: #fff;
+	width: 50%;
+	box-shadow: 1px 1px 5px grey;
+	margin-bottom: 0;
+}
+
+.notFound{
+	font-size: 160px;
+	color: #34B3A0;
+	text-align: center;
+}
+
+.p-found{
+	text-align: center;
+	color: #204056;
+	margin: 10px;
+}
+
+.return{
+	color: #204056;
+	display: inline-block;
+	margin-left: 5%;
+}
+
+.link-backHome{
+	margin-left: 40%;
+}
+
+.backHome{
+	display: inline-block;
+	text-align: center;
+	color: #fff;
+	/*margin-left: 40%;*/
+	background: #34B3A0;
+	border-radius: 50%;
+	padding: 30px;
+	box-shadow: 1px 1px 5px grey;
+	transition-property: background, border-radius;
+	transition-duration: 1s;
+}
+
+.found-box a:hover .backHome{
+	background: #ccc;
+	border-radius: 20px;
+	box-shadow: 1px 1px 5px grey;
 }
 
 
