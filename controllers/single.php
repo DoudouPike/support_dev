@@ -1,9 +1,8 @@
 <?php
 
 $json = file_get_contents("html.json");
-$stock = json_decode($json, true);
+$bdd = json_decode($json, true);
 
-var_dump($stock);
 
 if( isset($titre, $objectif, $contenu) )
 {
