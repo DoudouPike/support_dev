@@ -243,7 +243,7 @@ article h3 {
 	color: #204056;
 	padding: 40px;
 	width: 88%;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 	box-shadow: 1px 1px 5px #CCC;
 	transition-property: background;
 	transition-duration: 0.3s;
@@ -257,11 +257,11 @@ article h3 {
 	color: #34B3A0;
 	box-shadow: 1px 1px 5px #CCC;
 	border: 2px solid #34B3A0;
-	padding: 23px 0;
+	padding: 25px 0;
 }
 
 .btn-s{
-	margin-top: 15px;
+	margin-top: 5px;
 }
 
 .btn-m:hover, .btn-s:hover{
