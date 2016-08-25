@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client: localhost
--- Généré le: Jeu 25 Août 2016 à 11:54
+-- Généré le: Jeu 25 Août 2016 à 12:02
 -- Version du serveur: 5.5.49-0ubuntu0.14.04.1
 -- Version de PHP: 5.5.9-1ubuntu4.17
 
@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 CREATE TABLE IF NOT EXISTS `lessons` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `lang` varchar(63) COLLATE utf8_bin NOT NULL,
-  `cat` varchar(63) COLLATE utf8_bin NOT NULL,
+  `category` int(63) NOT NULL,
   `date` date NOT NULL,
   `date_last` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `title` varchar(63) COLLATE utf8_bin NOT NULL,
