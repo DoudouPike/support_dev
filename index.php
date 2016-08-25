@@ -1,5 +1,6 @@
 <?php
 session_start();
+$db = mysqli_connect("localhost", "root", "troiswa", "support_dev");
 
 $error = "";
 $page = "home";

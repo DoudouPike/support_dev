@@ -1,14 +1,18 @@
 <?php
 
-$json = file_get_contents($_GET["lang"].".json");
-$bdd = json_decode($json, true);
+$lang = $_GET["lang"];
+$thisLesson = "SELECT title WHERE lang = $lang FROM lessons";
+$dbLessons = mysqli_query($db, $thisLesson);
 
-$categorie = "Introduction";
+$count = 0;
+while ($count < sizeof($dbLessons))
+{
+	mysqli_fetch_assoc($dbLessons);
 
-
-for ($i = 0; $i < /* taille de la table[$i] */ ; $i ++) { 
-	$categorie = ;
+	$count++;
 }
+
+
 /* Si categorie = 0,
 alors $categorie = "Introduction"*/
 
