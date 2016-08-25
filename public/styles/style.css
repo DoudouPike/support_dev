@@ -326,7 +326,7 @@ article h3 {
 	height: 80vh;
 }
 
-.formLogin {
+/*.formLogin {
   position: absolute;
   top: 0;
   left: 0;
@@ -345,10 +345,10 @@ article h3 {
   display: flex;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-}
+}*/
 
 
-input {
+/*input {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -445,7 +445,7 @@ label[for="pwd"]:after {
 
 :-ms-input-placeholder {
   color: #ccc;
-}
+}*/
 
 
 /*404*/
