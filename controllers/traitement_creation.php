@@ -5,13 +5,11 @@
 // 	exit;
 // }
 
-
-
-if(isset($_POST["titre"], $_POST["contenu"], $_POST["objectif"], $_POST["choixLangage"], $_POST["choixCategorie"])){
+if(isset($_POST["titre"], $_POST["textBox"], $_POST["objectif"], $_POST["choixLangage"], $_POST["choixCategorie"])){
 
 	$id = 0;
 	$titre = $_POST["titre"];
-	$contenu = $_POST["contenu"];
+	$contenu = $_POST["textBox"];
 	$objectif = $_POST["objectif"];
 	$langage = $_POST["choixLangage"];
 	$categorie = $_POST["choixCategorie"];
@@ -40,7 +38,7 @@ if(isset($_POST["titre"], $_POST["contenu"], $_POST["objectif"], $_POST["choixLa
 		if($encodageJson){
 			var_dump("OK");
 
-		array_push($intro, array('id' => $id, 'titre' => $titre, 'contenu' => $contenu, 'objectif' => $objectif, 'categorie' => $categorie));
+		array_push($intro, array('id' => $id, 'titre' => $titre, 'textBox' => $contenu, 'objectif' => $objectif, 'categorie' => $categorie));
 
 
 			$bdd[$categorie] = $intro;
