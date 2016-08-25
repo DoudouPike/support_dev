@@ -274,6 +274,10 @@ article h3 {
 	background: #E9EAEA;
 }
 
+.icon-ms{
+	margin-right: 5px;
+}
+
 .box-sc:hover{
 	background: #34B3A0;
 	color: #fff;
