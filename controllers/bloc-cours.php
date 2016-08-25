@@ -1,6 +1,6 @@
 <?php
 
-if(empty($bdd))
+if(empty($db))
 {
 	$titre = "";
 	$error = "Aucun cours à afficher...";
@@ -8,7 +8,17 @@ if(empty($bdd))
 }
 else
 {
-	$count = 0;
+	$lang = $_GET["lang"];
+	$titleLang = "SELECT title FROM lessons WHERE lang = '".$lang."'";
+
+	$dbLang = mysqli_query($db, $titleLang);
+
+	while($titleList = mysqli_fetch_assoc($dbLang))
+	{
+		var_dump($titleList);
+		require("views/bloc-cours.phtml");
+	}
+	/*$count = 0;
 	while($count < sizeof($bdd))
 	{
 		$thisbdd = $bdd[$count];
@@ -40,16 +50,7 @@ else
 			require("views/bloc-cours.phtml");
 		}
 		$count++;
-	}
-
-	/*
-	si
-
-
-
-
-
-	*/
+	}*/
 }
 
 
