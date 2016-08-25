@@ -1,40 +1,45 @@
+<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+<script>tinymce.init({ selector:'textarea' });</script>
 <div class="container">
     <div class="login">
-    	
+        
     </div>
     <div>
-    	<h1>Création</h1>
+        <h1>Création</h1>
         <form method="post" align="center" class="clearfix">
-        	<div>
-        		<input type="text" name="titre" placeholder="Votre titre" value="" required="required" />
-        	</div>
-    <br>	
-        	<div>
-        		<input type="textarea" name="contenu" value="" placeholder="Votre texte içi" required="required" />
-        	</div>
+            <textarea>Easy (and free!) You should check out our premium features.</textarea>
+            <div>
+                <input class="creation" type="text" name="titre" placeholder="Votre titre" value="" required="required" />
+            </div>
+    <br>    
+            <div>
+                <input class="creation" type="textarea" name="contenu" value="" placeholder="Votre texte içi" required="required" />
+            </div>
     <br>
             <div>
-                <input type="textarea" name="objectif" value="" placeholder="Votre objectif içi" required="required" />
+                <input class="creation" type="textarea" name="objectif" value="" placeholder="Votre objectif içi" required="required" />
             </div>
     <br>
             <label for="Langage">Langage : </label>
-            <select name="choixLangage" id="Langage">
+            <select class="creation" name="choixLangage" id="Langage">
                 <option value="0">Sélectionnez votre Langage</option>
                 <option value="html">HTML</option>
                 <option value="css">CSS</option>
                 <option value="php" selected>PHP</option>
+                <option value="php" selected>JS</option>
             </select>
 
             <label for="Categorie">Categorie : </label>
-            <select name="choixCategorie" id="Categorie">
+            <select class="creation" name="choixCategorie" id="Categorie">
                 <option value="0">Sélectionnez votre Categorie</option>
                 <option value="introduction" selected>introduction</option>
                 <option value="step1">Step 1</option>
                 <option value="step2">Step 2</option>
                 <option value="step3">Step 3</option>
             </select>
+
             
-            <button type="submit" name="register" class="btn btn-primary btn-block btn-large">Publier</button>
+            <button type="submit" name="register" class="btn btn-primary btn-block btn-large cre">Publier</button>
         </form>
     </div>
 </div>
