@@ -285,8 +285,20 @@ article h3 {
 }
 
 /*CREATION*/
+.container .creation {
+/*	background-color: red;*/
+	display: block;
+	width: 40%;
+	margin: 2% 0;
+}
 
+#mceu_14-body {
+	display: none;
+}
 
+.publish {
+
+}
 
 
 /*LOGIN*/
@@ -360,7 +372,7 @@ input[type="submit"] {
 }
 
 label {
-  font-size: 0;
+  font-size: inherit;
 }
 
 label[for="name"] {

@@ -1,45 +1,27 @@
 <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
 <script>tinymce.init({ selector:'textarea' });</script>
 <div class="container">
-    <div class="login">
-        
-    </div>
-    <div>
-        <h1>Création</h1>
-        <form method="post" align="center" class="clearfix">
-            <textarea>Easy (and free!) You should check out our premium features.</textarea>
-            <div>
-                <input class="creation" type="text" name="titre" placeholder="Votre titre" value="" required="required" />
-            </div>
-    <br>    
-            <div>
-                <input class="creation" type="textarea" name="contenu" value="" placeholder="Votre texte içi" required="required" />
-            </div>
-    <br>
-            <div>
-                <input class="creation" type="textarea" name="objectif" value="" placeholder="Votre objectif içi" required="required" />
-            </div>
-    <br>
-            <label for="Langage">Langage : </label>
-            <select class="creation" name="choixLangage" id="Langage">
-                <option value="0">Sélectionnez votre Langage</option>
-                <option value="html">HTML</option>
-                <option value="css">CSS</option>
-                <option value="php" selected>PHP</option>
-                <option value="php" selected>JS</option>
-            </select>
-
-            <label for="Categorie">Categorie : </label>
-            <select class="creation" name="choixCategorie" id="Categorie">
-                <option value="0">Sélectionnez votre Categorie</option>
-                <option value="introduction" selected>introduction</option>
-                <option value="step1">Step 1</option>
-                <option value="step2">Step 2</option>
-                <option value="step3">Step 3</option>
-            </select>
-
-            
-            <button type="submit" name="register" class="btn btn-primary btn-block btn-large cre">Publier</button>
-        </form>
-    </div>
+    <h1>Création</h1>
+    <form method="post" align="center" class="clearfix">
+        <input class="creation" type="text" name="titre" placeholder="Titre du cours" value="" required="required" />
+        <textarea name="textBox">Easy (and free!) You should check out our premium features.</textarea>
+        <input class="creation" type="textarea" name="objectif" value="" placeholder="Votre objectif içi" required="required"/>
+        <label class="creation" for="Langage">Langage : </label>
+        <select class="creation" name="choixLangage" id="Langage">
+            <option value="0">Sélectionnez votre Langage</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="php">PHP</option>
+            <option value="php">JS</option>
+        </select>
+        <label class="creation" for="Categorie">Categorie : </label>
+        <select class="creation" name="choixCategorie" id="Categorie">
+            <option value="0">Sélectionnez votre Categorie</option>
+            <option value="introduction" selected>introduction</option>
+            <option value="step1">Step 1</option>
+            <option value="step2">Step 2</option>
+            <option value="step3">Step 3</option>
+        </select>
+        <button type="submit" name="register" class="publish btn btn-primary btn-block btn-large cre">Publier</button>
+    </form>
 </div>

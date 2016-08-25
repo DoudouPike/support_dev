@@ -21,6 +21,8 @@ else
 			$objectif = $thisbdd["objectif"];
 			$contenu = $thisbdd["contenu"];
 
+			$urlTitre = urlencode($titre);
+
 			//$categorie = "Introduction";
 			require("views/bloc-cours.phtml");
 
@@ -33,11 +35,21 @@ else
 			$objectif = $thisbdd["objectif"];
 			$contenu = $thisbdd["contenu"];
 
+			$urlTitre = urlencode($titre);
 			//$categorie = "Step 1";
 			require("views/bloc-cours.phtml");
 		}
 		$count++;
 	}
+
+	/*
+	si
+
+
+
+
+
+	*/
 }
 
 
