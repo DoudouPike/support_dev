@@ -326,7 +326,7 @@ article h3 {
 	height: 80vh;
 }
 
-.formLogin {
+/*.formLogin {
   position: absolute;
   top: 0;
   left: 0;
@@ -345,10 +345,10 @@ article h3 {
   display: flex;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-}
+}*/
 
 
-input {
+/*input {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -435,17 +435,17 @@ label[for="pwd"]:after {
 
 :-moz-placeholder {
   /* Firefox 18- */
-  color: #ccc;
+  /*color: #ccc;
 }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: #ccc;
+ /* color: #ccc;
 }
 
 :-ms-input-placeholder {
   color: #ccc;
-}
+}*/
 
 
 /*404*/
@@ -457,6 +457,11 @@ label[for="pwd"]:after {
 	width: 50%;
 	box-shadow: 1px 1px 5px grey;
 	margin-bottom: 0;
+}
+
+.martine{
+	margin: 0 auto;
+	width: 80%;
 }
 
 .notFound{
