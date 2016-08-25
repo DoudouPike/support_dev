@@ -11,35 +11,33 @@ else
 	while($count < sizeof($bdd))
 	{
 		$thisbdd = $bdd[$count];
+
 		if(in_array("intro", $thisbdd))
 		{
-			$categorie = "Introduction";
-			$id = $bdd[$count]["id"];
-			$title = $bdd[$count]["title"];
-			$objectif = $bdd[$count]["objectif"];
-			$contenu = $bdd[$count]["contenu"];
+			
+			$id = $thisbdd["id"];
+			$titre = $thisbdd["titre"];
+			$objectif = $thisbdd["objectif"];
+			$contenu = $thisbdd["contenu"];
+
+			//$categorie = "Introduction";
+			require("views/bloc-cours.phtml");
 
 		}
+		elseif(in_array("step1", $thisbdd))
+		{
+			
+			$id = $thisbdd["id"];
+			$titre = $thisbdd["titre"];
+			$objectif = $thisbdd["objectif"];
+			$contenu = $thisbdd["contenu"];
 
+			//$categorie = "Step 1";
+			require("views/bloc-cours.phtml");
+		}
 		$count++;
 	}
-
-	/*for($i = 0; $i < sizeof($bddIntro); $i++)
-	{
-		$titre = $bddIntro[$i]["titre"];
-		
-		require("views/bloc-cours.phtml");
-	}
-
-	if($bdd[] = "step1")
-	{
-		for($i = 0; $i < sizeof($bddStep1); $i++)
-		{
-			$titre = $bddStep1[$i]["titre"];
-		}	
-	}*/
 }
-require("views/bloc-cours.phtml");
 
 
 ?>
