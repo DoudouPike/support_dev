@@ -4,7 +4,7 @@ $db = mysqli_connect("localhost", "root", "troiswa", "support_dev");
 
 $error = "";
 $page = "home";
-$access = ["home", "login", "logout", "cours", "single", "creation"]; //ajouter les autres pages
+$access = ["home", "login", "logout", "cours", "single", "creation", "404"]; //ajouter les autres pages
 
 if(isset($_GET["page"]) && in_array($_GET["page"], $access))
 {

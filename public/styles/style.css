@@ -459,6 +459,11 @@ label[for="pwd"]:after {
 	margin-bottom: 0;
 }
 
+.martine{
+	margin: 0 auto;
+	width: 80%;
+}
+
 .notFound{
 	font-size: 160px;
 	color: #34B3A0;
