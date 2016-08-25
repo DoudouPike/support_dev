@@ -234,13 +234,35 @@ article h3 {
 }
 
 .box-sc{
+	float: left;
 	background: #fff;
 	color: #204056;
 	padding: 40px;
+	width: 88%;
 	margin-bottom: 5px;
 	box-shadow: 1px 1px 5px #CCC;
 	transition-property: background;
 	transition-duration: 0.3s;
+}
+
+.btn-m, .btn-s{
+	float: right;
+	width: 10%;
+	text-align: center;
+	text-decoration: none;
+	color: #34B3A0;
+	box-shadow: 1px 1px 5px #CCC;
+	border: 2px solid #34B3A0;
+	padding: 23px 0;
+}
+
+.btn-s{
+	margin-top: 15px;
+}
+
+.btn-m:hover, .btn-s:hover{
+	border: 2px solid #5ED8C4;
+	color: #5ED8C4;
 }
 
 .icon-cat{
@@ -249,6 +271,10 @@ article h3 {
 	padding: 20px;
 	border-radius: 50%;
 	background: #E9EAEA;
+}
+
+.icon-ms{
+	margin-right: 5px;
 }
 
 .box-sc:hover{
@@ -500,16 +526,40 @@ label[for="pwd"]:after {
 /*PHONE*/
 
 @media screen and (max-width:700px) {
+
 	.colonne, .colonne2 {
 		float: none;
 		display: block;
 		margin: 0 auto;
-		width: 100%;
+		width: 95%;
+		height: 5%;
 		font-size: 1.8rem;
+	}
+	
+	.border{
+		display: none;
+	}
+
+	.colonne p{
+		display: none;
+	}
+
+	.colonne2 p{
+		display: none;
+	}
+
+	.icon{
+		margin-bottom: 3px;
+	}
+
+	.php-box, .js-box{
+		margin-bottom: 3px;
 	}
 
 	.box-sc {
 		font-size: 1.8rem;
 	}
+
+
 
 }
