@@ -206,6 +206,7 @@ article h3 {
 }
 
 .linkHome p {
+	margin-top: 2%;
 	border-top: 2px solid #FFF;
 	border-bottom: 2px solid #FFF;
 	padding: 5%;
@@ -440,7 +441,7 @@ label[for="pwd"]:after {
 	padding: 30px;
 	box-shadow: 1px 1px 5px grey;
 	transition-property: background, border-radius;
-	transition-duration: 1s;
+	transition-duration: 0.8s;
 }
 
 .found-box a:hover .backHome{
@@ -454,6 +455,7 @@ label[for="pwd"]:after {
 
 .footer {
 	text-align: center;
+	color: #939598;
 	margin-top: 100px;
 	padding: 100px;
 	background: #D4D5D6;
