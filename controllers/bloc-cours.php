@@ -4,6 +4,7 @@ if(empty($bdd))
 {
 	$titre = "";
 	$error = "Aucun cours à afficher...";
+	require("views/bloc-cours.phtml");
 }
 else
 {
