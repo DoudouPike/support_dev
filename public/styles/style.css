@@ -7,6 +7,10 @@ body {
 	background: #E9EAEA;
 }
 
+img{
+	max-width: 100%;
+}
+
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -239,7 +243,7 @@ article h3 {
 	color: #204056;
 	padding: 40px;
 	width: 88%;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 	box-shadow: 1px 1px 5px #CCC;
 	transition-property: background;
 	transition-duration: 0.3s;
@@ -253,11 +257,11 @@ article h3 {
 	color: #34B3A0;
 	box-shadow: 1px 1px 5px #CCC;
 	border: 2px solid #34B3A0;
-	padding: 23px 0;
+	padding: 25px 0;
 }
 
 .btn-s{
-	margin-top: 15px;
+	margin-top: 5px;
 }
 
 .btn-m:hover, .btn-s:hover{
@@ -303,7 +307,7 @@ article h3 {
 
 }
 
-.creation {
+/*.creation {
 	display: block;
 	margin: 0 auto;
 	background: #fff;
@@ -315,7 +319,7 @@ article h3 {
 	display: flex;
 	-webkit-justify-content: space-between;
 	justify-content: space-between;*/
-}
+/*
 
 .moduleCreation {
 	height: 400px;
@@ -435,18 +439,33 @@ label[for="pwd"]:after {
 
 :-moz-placeholder {
   /* Firefox 18- */
-  color: #ccc;
+  /*color: #ccc;
 }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: #ccc;
+ /* color: #ccc;
 }
 
 :-ms-input-placeholder {
   color: #ccc;
 }*/
 
+.customForm {
+	text-align: center;
+}
+
+.customInput {
+	width: 35%;
+	height: 3rem;
+}
+
+.customLabel {
+	display: inline-block;
+	background-color: red;
+	font-size: 1.5rem;
+	text-align: right;
+}
 
 /*404*/
 
@@ -457,6 +476,11 @@ label[for="pwd"]:after {
 	width: 50%;
 	box-shadow: 1px 1px 5px grey;
 	margin-bottom: 0;
+}
+
+.found-box img{
+	margin-left: 26%;
+	height: 300px;
 }
 
 .notFound{
@@ -499,7 +523,6 @@ label[for="pwd"]:after {
 	border-radius: 20px;
 	box-shadow: 1px 1px 5px grey;
 }
-
 
 /*FOOTER*/
 
