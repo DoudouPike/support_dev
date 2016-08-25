@@ -3,25 +3,34 @@
 <div class="container">
     <h1>Création</h1>
     <form method="post" align="center" class="clearfix">
+
         <input class="creation" type="text" name="titre" placeholder="Titre du cours" value="" required="required" />
-        <textarea name="textBox">Easy (and free!) You should check out our premium features.</textarea>
+
+        <textarea class="moduleCreation" name="textBox">Easy (and free!) You should check out our premium features.</textarea>
+
         <input class="creation" type="textarea" name="objectif" value="" placeholder="Votre objectif içi" required="required"/>
+
         <label class="creation" for="Langage">Langage : </label>
-        <select class="creation" name="choixLangage" id="Langage">
+
+        <select class="creation roll" name="choixLangage" id="Langage">
             <option value="0">Sélectionnez votre Langage</option>
             <option value="html">HTML</option>
             <option value="css">CSS</option>
             <option value="php">PHP</option>
             <option value="php">JS</option>
         </select>
+
         <label class="creation" for="Categorie">Categorie : </label>
-        <select class="creation" name="choixCategorie" id="Categorie">
+
+        <select class="creation roll" name="choixCategorie" id="Categorie">
             <option value="0">Sélectionnez votre Categorie</option>
             <option value="introduction" selected>introduction</option>
             <option value="step1">Step 1</option>
             <option value="step2">Step 2</option>
             <option value="step3">Step 3</option>
         </select>
+
         <button type="submit" name="register" class="publish btn btn-primary btn-block btn-large cre">Publier</button>
+
     </form>
 </div>

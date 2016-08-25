@@ -219,7 +219,6 @@ article h3 {
 
 
 /*CATEGORIES*/
-
 .sous-cat{
 	text-align: left;
 	font-size: 25px;
@@ -266,8 +265,8 @@ article h3 {
 .container .creation {
 /*	background-color: red;*/
 	display: block;
-	width: 40%;
-	margin: 2% 0;
+	width: 60%;
+	margin: 2% auto;
 }
 
 #mceu_14-body {
@@ -278,7 +277,23 @@ article h3 {
 
 }
 
+.creation {
+	display: block;
+	margin: 0 auto;
+	background: #fff;
+	font-size: 1.2rem;
+	padding: 0;
+	border-radius: 4px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	/*isplay: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;*/
+}
 
+.moduleCreation {
+	height: 400px;
+}
 /*LOGIN*/
 
 .containerLogin {
@@ -306,9 +321,6 @@ article h3 {
   justify-content: space-between;
 }
 
-.formCreate {
-	
-}
 
 input {
   -moz-box-sizing: border-box;
