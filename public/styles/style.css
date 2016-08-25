@@ -38,7 +38,7 @@ h2 {
 }
 
 .header h1 {
-	line-height: ;
+/*	line-height: ;*/
 	background-color: #FFFFFF;
 /*	border: 1px solid #E9EAEA;*/
 }
@@ -104,6 +104,11 @@ h2 {
 .btn:hover {
   background: #34B3A4;
   text-decoration: none;
+}
+
+/*HEADER ADMIN*/
+.create {
+	background-color: red;
 }
 
 /*HOME*/
