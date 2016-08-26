@@ -3,12 +3,13 @@
 
 if(isset($_POST["name"], $_POST["pwd"]))
 {
-$res = mysqli_query($db, "SELECT login,password FROM users WHERE login = '".$_POST["name"]."'");
-while ($user = mysqli_fetch_assoc($res))
-{
-$loginAdmin = $user['login'];
-$mdpAdmin = $user['password'];
-}
+	$res = mysqli_query($db, "SELECT login,password FROM users WHERE login = '".$_POST["name"]."'");
+	
+	while ($user = mysqli_fetch_assoc($res))
+	{
+		$loginAdmin = $user['login'];
+		$mdpAdmin = $user['password'];
+	}
 
 	$name = $_POST["name"];
 	$pwd = $_POST["pwd"];

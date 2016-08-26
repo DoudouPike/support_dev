@@ -1,7 +1,8 @@
 <?php
 session_start();
 $db = mysqli_connect("localhost", "root", "troiswa", "support_dev");
-
+$date = date('D j F Y H:i');
+// $date_post = date();
 $error = "";
 $page = "home";
 $access = ["home", "login", "logout", "cours", "single", "creation", "404"]; //ajouter les autres pages

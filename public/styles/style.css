@@ -307,7 +307,7 @@ article h3 {
 
 }
 
-.creation {
+/*.creation {
 	display: block;
 	margin: 0 auto;
 	background: #fff;
@@ -319,7 +319,7 @@ article h3 {
 	display: flex;
 	-webkit-justify-content: space-between;
 	justify-content: space-between;*/
-}
+/*
 
 .moduleCreation {
 	height: 400px;
@@ -451,6 +451,21 @@ label[for="pwd"]:after {
   color: #ccc;
 }*/
 
+.customForm {
+	text-align: center;
+}
+
+.customInput {
+	width: 35%;
+	height: 3rem;
+}
+
+.customLabel {
+	display: inline-block;
+	background-color: red;
+	font-size: 1.5rem;
+	text-align: right;
+}
 
 /*404*/
 
@@ -508,7 +523,6 @@ label[for="pwd"]:after {
 	border-radius: 20px;
 	box-shadow: 1px 1px 5px grey;
 }
-
 
 /*FOOTER*/
 
