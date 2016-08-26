@@ -114,7 +114,6 @@ h2 {
 
 
 /*HOME*/
-
 article h3 {
 	text-align: center;
 	font-size: 25px;
@@ -317,6 +316,13 @@ article h3 {
 	background: #fff;
 }
 
+.p-date{
+	float: right;
+	width: 34%;
+	color: #939598;
+	margin-top: 20px;
+}
+
 /*CREATION*/
 .container .creation {
 /*	background-color: red;*/
@@ -329,9 +335,9 @@ article h3 {
 	display: none;
 }
 
-.publish {
+/*.publish {
 
-}
+}*/
 
 /*.creation {
 	display: block;
@@ -483,7 +489,8 @@ label[for="pwd"]:after {
 
 .customInput {
 	width: 35%;
-	height: 3rem;
+	height: 40px;
+	border-radius: 5px;
 }
 
 .customLabel {
@@ -494,7 +501,6 @@ label[for="pwd"]:after {
 }
 
 /*404*/
-
 .found-box{
 	margin: 70px auto 0;
 	padding: 50px;
@@ -551,7 +557,6 @@ label[for="pwd"]:after {
 }
 
 /*FOOTER*/
-
 .footer {
 	text-align: center;
 	color: #939598;
@@ -573,9 +578,7 @@ label[for="pwd"]:after {
 }*/
 
 /*PHONE*/
-
 @media screen and (max-width:700px) {
-
 	.colonne, .colonne2 {
 		float: none;
 		display: block;
@@ -608,7 +611,4 @@ label[for="pwd"]:after {
 	.box-sc {
 		font-size: 1.8rem;
 	}
-
-
-
 }
