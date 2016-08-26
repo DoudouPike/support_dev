@@ -4,12 +4,14 @@
     <h2>Modif</h2>
     <form method="post" align="center" class="clearfix">
 
+    	<div><?= $error ?></div>
+
     	<input type="hidden" value="<?= $id ?>" >
 		
 		<label class="creation customLabel" for="titre">Titre :</label>
         <input class="creation customInput" type="text" name="titre" placeholder="Titre du cours" id="titre" value="<?= $titre ?>" required="required" />
 		
-		<label class="creation customLabel" for="objectif">Titre :</label>
+		<label class="creation customLabel" for="objectif">Objectif du cours :</label>
         <input class="creation customInput" type="textarea" name="objectif" value="<?= $objectif ?>" placeholder="Votre objectif içi" id="objectif" required="required"/>
 
         <textarea class="moduleCreation" name="textBox"><?= $contenu ?></textarea>

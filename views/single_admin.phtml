@@ -18,6 +18,7 @@
 
 	<p class="p-date">Date création : <?= $d_creation ?> // Date dernière modif : <?= $d_modif ?></p>
 
-	<textarea class="txt-area" placeholder="Laches un comms"></textarea>
-	<button type="submit" class="btn-comms">Envoyer</button>
+	<a class="btn-m" href="index.php?page=modif&id=<?= $id ?>"><i class="fa fa-wrench icon-ms" aria-hidden="true"></i> Modifier</a>
+
+	<a class="btn-s" href="index.php?page=delete&id=<?= $id ?>"><i class="fa fa-trash" aria-hidden="true"></i> Supprimer</a>
 </div>
