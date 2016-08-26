@@ -1,7 +1,7 @@
 <?php
 
 $lang = $_GET["lang"];
-$titleLang = "SELECT title FROM lessons WHERE lang = '".$lang."'";
+$titleLang = "SELECT * FROM lessons WHERE lang = '".$lang."'";
 
 $dbLang = mysqli_query($db, $titleLang);
 

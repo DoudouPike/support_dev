@@ -1,6 +1,5 @@
 <?php
 
-
 if(isset($_POST["name"], $_POST["pwd"]))
 {
 	$res = mysqli_query($db, "SELECT login,password FROM users WHERE login = '".$_POST["name"]."'");
