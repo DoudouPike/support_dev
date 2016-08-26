@@ -447,36 +447,7 @@ button.customButton {
 
 /*PHONE*/
 @media screen and (max-width:700px) {
-	.colonne, .colonne2 {
+	.colonne, .colonne2{
 		float: none;
-		display: block;
-		margin: 0 auto;
-		width: 95%;
-		height: 5%;
-		font-size: 1.8rem;
-	}
-	
-	.border{
-		display: none;
-	}
-
-	.colonne p{
-		display: none;
-	}
-
-	.colonne2 p{
-		display: none;
-	}
-
-	.icon{
-		margin-bottom: 3px;
-	}
-
-	.php-box, .js-box{
-		margin-bottom: 3px;
-	}
-
-	.box-sc {
-		font-size: 1.8rem;
-	}
+	}	
 }
