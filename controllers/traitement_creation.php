@@ -18,6 +18,8 @@ if(isset($_POST["titre"], $_POST["textBox"], $_POST["objectif"], $_POST["choixLa
 
 		$res = mysqli_query($db, "INSERT INTO lessons (lang, category, title, goal, content) VALUES ('".$langage.", ".$categorie.", ".$titre.", ".$objectif.", ".$contenu."')");
 
+  mysql_query($res);
+
 	// 	while ($creation = mysqli_fetch_assoc($res))
 	// {
 	// 	var_dump($creation);
