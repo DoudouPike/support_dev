@@ -350,10 +350,8 @@ article h3 {
 	margin: 2% auto;
 }
 
-#mceu_27 {
-	display: block;
-	width: 100%;
-	min-height: 30%;
+textarea {
+	height: 30%;
 }
 
 #mceu_14-body {
