@@ -10,6 +10,10 @@ if(isset($_GET["page"]) && in_array($_GET["page"], $access))
 {
 	$page = $_GET["page"];
 }
+else
+{
+	require("controllers/404.php");
+}
 
 $traitementList = ["creation", "login", "modif", "delete"];
 
