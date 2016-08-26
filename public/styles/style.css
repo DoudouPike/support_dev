@@ -330,12 +330,8 @@ article h3 {
 	margin: 2% auto;
 }
 
-#textBox_ifr {
-	height: 50%;
-}
-
-iframe {
-	height: 50%;
+textarea {
+	height: 30%;
 }
 
 #mceu_14-body {
