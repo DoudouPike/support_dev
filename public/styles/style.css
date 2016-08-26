@@ -491,13 +491,20 @@ label[for="pwd"]:after {
 	width: 35%;
 	height: 40px;
 	border-radius: 5px;
+	border-style: none;
+	padding: 1%;
+	letter-spacing: 1px;
+	background-color: #fff;
 }
 
 .customLabel {
 	display: inline-block;
-	background-color: red;
 	font-size: 1.5rem;
-	text-align: right;
+	margin: 2%;
+}
+
+.customButton {
+	margin-top: 3%;
 }
 
 /*404*/
