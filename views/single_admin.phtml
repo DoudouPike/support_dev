@@ -1,22 +1,22 @@
 <div class="container">
 
 
-	<h2><?= $titre ?></h2>
+	<h2><?= $single["title"] ?></h2>
 
 
 
 	<div class="objectifs">
 		<h3>Les objectifs de ce cours :</h3>
-		<p><?= $objectif ?></p>
+		<p><?= $single["goal"] ?></p>
 	</div>
 
 	<div class="border-single"></div>
 
 	<div class="contenu">
-		<p><?= $contenu ?></p>
+		<p><?= $single["content"] ?></p>
 	</div>
 
-	<p class="p-date">Date création : <?= $d_creation ?> // Date dernière modif : <?= $d_modif ?></p>
+	<p class="p-date">Date création : <?= $single["date"] ?> // Date dernière modif : <?= $single["date_last"]; ?></p>
 
 	<a class="btn-in" href="index.php?page=modif&id=<?= $id ?>"><i class="fa fa-wrench icon-ms" aria-hidden="true"></i>Modifier</a>
 
