@@ -8,7 +8,14 @@ $dbLang = mysqli_query($db, $titleLang);
 while($titleList = mysqli_fetch_assoc($dbLang))
 {	
 	$title = $titleList["title"];
-	require("views/bloc-cours.phtml");		
+	if(isset($_SESSION["admin"]))
+	{
+		require("views/bloc-cours_admin.phtml");
+	}
+	else
+	{
+		require("views/bloc-cours.phtml");
+	}
 }
 
 ?>
