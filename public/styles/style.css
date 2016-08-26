@@ -318,9 +318,11 @@ article h3 {
 
 .p-date{
 	float: right;
-	width: 34%;
+	width: 35%;
 	color: #939598;
 	margin-top: 20px;
+	font-family: Arial;
+	font-size: 13px;
 }
 
 /*CREATION*/
