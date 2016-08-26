@@ -241,6 +241,16 @@ article h3 {
 	transition-duration: 0.3s;
 }
 
+.box-sc-out{
+	background: #fff;
+	color: #204056;
+	padding: 40px;
+	margin-bottom: 10px;
+	box-shadow: 1px 1px 5px #CCC;
+	transition-property: background;
+	transition-duration: 0.3s;
+}
+
 .btn-m, .btn-s{
 	float: right;
 	width: 10%;
@@ -280,7 +290,17 @@ article h3 {
 	color: #fff;
 }
 
+.box-sc-out:hover{
+	background: #34B3A0;
+	color: #fff;
+}
+
 .box-sc:hover .icon-cat{
+	background: #fff;
+	color: #34B3A0;
+}
+
+.box-sc-out:hover .icon-cat{
 	background: #fff;
 	color: #34B3A0;
 }
@@ -330,10 +350,8 @@ article h3 {
 	margin: 2% auto;
 }
 
-#mceu_27 {
-	display: block;
-	width: 100%;
-	min-height: 30%;
+textarea {
+	height: 30%;
 }
 
 #mceu_14-body {
@@ -437,12 +455,16 @@ button.customButton {
 
 .footer {
 	text-align: center;
-	color: #939598;
 	margin-top: 100px;
 	padding: 100px;
 	background: #D4D5D6;
 	position: absolute;
 	width: 100%;
+}
+
+.footer a{
+	color: #939598;
+	text-decoration: none;
 }
 
 
