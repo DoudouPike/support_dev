@@ -24,7 +24,7 @@ if(isset($_POST["choixLangage"], $_POST["choixCategorie"], $_POST["titre"], $_PO
 		header("Location: index.php?page=cours&lang=$langage");
 		exit;
 		// var_dump($res);
-		}
+	}
 
 	var_dump($_POST);
 	// var_dump($_POST['choixLangage']);
