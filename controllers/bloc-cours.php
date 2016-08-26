@@ -1,14 +1,30 @@
 <?php
+if(isset($_GET["lang"]) && in_array($_GET["lang"], $langAccess))
+{
+	$lang = $_GET["lang"];
+	$req = "SELECT * FROM lessons WHERE lang = '".$lang."'";
 
-$lang = $_GET["lang"];
-$titleLang = "SELECT title FROM lessons WHERE lang = '".$lang."'";
+	$thisDb = mysqli_query($db, $req);
 
-$dbLang = mysqli_query($db, $titleLang);
+	while($thisDbTab = mysqli_fetch_assoc($thisDb))
+	{	
+	$id = $thisDbTab["id"];
+	$title = $thisDbTab["title"];
 
-while($titleList = mysqli_fetch_assoc($dbLang))
-{	
-	$title = $titleList["title"];
-	require("views/bloc-cours.phtml");		
+		if(isset($_SESSION["admin"]))
+		{
+			require("views/bloc-cours_admin.phtml");
+		}
+		else
+		{
+			require("views/bloc-cours.phtml");
+		}
+	}
+
+}
+else
+{
+	require("controllers/404.php");
 }
 
 ?>
