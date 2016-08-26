@@ -457,12 +457,16 @@ button.customButton {
 
 .footer {
 	text-align: center;
-	color: #939598;
 	margin-top: 100px;
 	padding: 100px;
 	background: #D4D5D6;
 	position: absolute;
 	width: 100%;
+}
+
+.footer a{
+	color: #939598;
+	text-decoration: none;
 }
 
 
