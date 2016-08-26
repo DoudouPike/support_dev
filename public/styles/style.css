@@ -264,9 +264,6 @@ article h3 {
 	cursor: pointer;
 }
 
-.a{
-	margin: 0 auto;
-}
 
 .btn-s{
 	margin-top: 5px;
@@ -364,6 +361,25 @@ article h3 {
 
 .btn-comms:hover{
 	background: #5ED8C4;
+}
+
+.btn-in{
+	float: none;
+	display: inline-block;
+	margin-top: 50px;
+	text-align: center;
+	text-decoration: none;
+	color: #34B3A0;
+	box-shadow: 1px 1px 5px #CCC;
+	border: 2px solid #34B3A0;
+	padding: 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.btn-in:hover{
+	border: 2px solid #5ED8C4;
+	color: #5ED8C4;
 }
 
 /*CREATION*/
