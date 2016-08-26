@@ -11,7 +11,7 @@ if(isset($_POST["name"], $_POST["pwd"]))
 	}
 	else
 	{
-		$res = mysqli_query($db, "SELECT id,login,password FROM users WHERE login = '".$_POST["name"]."'");
+		$res = mysqli_query($db, "SELECT id,login,password FROM users WHERE login = $name");
 
 		while ($user = mysqli_fetch_assoc($res))
 		{
