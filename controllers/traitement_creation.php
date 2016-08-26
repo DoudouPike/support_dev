@@ -1,7 +1,5 @@
 <?php
 
-var_dump($date);
-
 if(isset($_POST["choixLangage"], $_POST["choixCategorie"], $_POST["titre"], $_POST["objectif"], $_POST["textBox"])){
 
 	$titre = $_POST["titre"];
@@ -10,19 +8,21 @@ if(isset($_POST["choixLangage"], $_POST["choixCategorie"], $_POST["titre"], $_PO
 	$langage = $_POST["choixLangage"];
 	$categorie = $_POST["choixCategorie"];
 
-	$res = mysqli_query($db, "INSERT INTO lessons (lang, `category`, `date`, `title`, `goal`, `content`) VALUES ('".$langage."', '".$categorie."', CURRENT_DATE(), '".$titre."', '".$objectif."', '".$contenu."')");
+	$res = mysqli_query($db, "INSERT INTO lessons (lang, `category`, `date`, `title`, `goal`, `content`) VALUES ('".$langage."', '".$categorie."', CURDATE(), '".$titre."', '".$objectif."', '".$contenu."')");
 
-	if($res == false){
+	if($res == false)
+	{
 		if (mysqli_errno($db) == 1062)
 			$error = "Ce titre existe déjà";
+
 		else
 			$error = 'Internal server error';
-		var_dump($error);
+			var_dump($error);
 	}
 	else{
 
 		var_dump($res);
-		}
+	}
 
 	// header("Location: index.php?page=accueil");
 	// exit;

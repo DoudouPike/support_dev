@@ -1,7 +1,6 @@
 <?php
 session_start();
 $db = mysqli_connect("localhost", "root", "troiswa", "support_dev");
-$date = date('D j F Y H:i');
 
 $error = "";
 $page = "home";

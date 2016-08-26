@@ -2,7 +2,7 @@
 	if(isset($_SESSION["admin"]))
 	{
 		$id = $_GET["id"];
-		$req = "SELECT title,goal,content,date_last FROM lessons WHERE id = '".$id."'";
+		$req = "SELECT title,goal,content FROM lessons WHERE id = '".$id."'";
 		$thisDb = mysqli_query($db, $req);
 
 		$thisDbTab = mysqli_fetch_assoc($thisDb);
