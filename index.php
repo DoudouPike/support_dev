@@ -1,7 +1,6 @@
 <?php
 session_start();
 $db = mysqli_connect("localhost", "root", "troiswa", "support_dev");
-$date = date('D j F Y H:i');
 
 $error = "";
 $page = "home";
@@ -10,6 +9,10 @@ $access = ["home", "login", "logout", "cours", "single", "creation", "modif", "4
 if(isset($_GET["page"]) && in_array($_GET["page"], $access))
 {
 	$page = $_GET["page"];
+}
+else
+{
+	require("controllers/404.php");
 }
 
 $traitementList = ["creation", "login", "modif", "delete", "register"];
