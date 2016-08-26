@@ -264,6 +264,10 @@ article h3 {
 	cursor: pointer;
 }
 
+.a{
+	margin: 0 auto;
+}
+
 .btn-s{
 	margin-top: 5px;
 }
@@ -447,7 +451,7 @@ button.customButton {
 	color: #204056;
 	display: inline-block;
 	margin-left: 5%;
-}
+}   
 
 .link-backHome{
 	margin-left: 40%;
