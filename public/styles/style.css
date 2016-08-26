@@ -249,8 +249,9 @@ article h3 {
 	color: #34B3A0;
 	box-shadow: 1px 1px 5px #CCC;
 	border: 2px solid #34B3A0;
-	padding: 25px 0;
+	padding: 27px 0;
 	border-radius: 5px;
+	cursor: pointer;
 }
 
 .btn-s{
@@ -451,5 +452,17 @@ button.customButton {
 @media screen and (max-width:700px) {
 	.colonne, .colonne2{
 		float: none;
-	}	
+		display: block;
+		margin: 0 auto;
+	}
+
+	.linkh{
+		float: none;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.border{
+		display: none;
+	}
 }
