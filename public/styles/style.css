@@ -250,6 +250,7 @@ article h3 {
 	box-shadow: 1px 1px 5px #CCC;
 	border: 2px solid #34B3A0;
 	padding: 25px 0;
+	border-radius: 5px;
 }
 
 .btn-s{
