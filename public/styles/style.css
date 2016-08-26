@@ -114,7 +114,6 @@ h2 {
 
 
 /*HOME*/
-
 article h3 {
 	text-align: center;
 	font-size: 25px;
@@ -291,6 +290,41 @@ article h3 {
 	color: #34B3A0;
 }
 
+/*SINGLE*/
+
+.border-single{
+	margin: 20px;
+	border-bottom: 1px solid #204056;
+}
+
+.objectifs p{
+	padding: 15px;
+	box-shadow: 1px 1px 5px #CCC;
+	background: #fff;
+}
+
+.objectifs h3{
+	background: #34B3A0;
+	color: #FFF;
+	padding: 15px;
+	box-shadow: 1px 1px 5px #CCC;	
+}
+
+.contenu{
+	padding: 15px;
+	box-shadow: 1px 1px 5px #CCC;
+	background: #fff;
+}
+
+.p-date{
+	float: right;
+	width: 35%;
+	color: #939598;
+	margin-top: 20px;
+	font-family: Arial;
+	font-size: 13px;
+}
+
 /*CREATION*/
 .container .creation {
 /*	background-color: red;*/
@@ -303,9 +337,9 @@ article h3 {
 	display: none;
 }
 
-.publish {
+/*.publish {
 
-}
+}*/
 
 /*.creation {
 	display: block;
@@ -457,18 +491,25 @@ label[for="pwd"]:after {
 
 .customInput {
 	width: 35%;
-	height: 3rem;
+	height: 40px;
+	border-radius: 5px;
+	border-style: none;
+	padding: 1%;
+	letter-spacing: 1px;
+	background-color: #fff;
 }
 
 .customLabel {
 	display: inline-block;
-	background-color: red;
 	font-size: 1.5rem;
-	text-align: right;
+	margin: 2%;
+}
+
+.customButton {
+	margin-top: 3%;
 }
 
 /*404*/
-
 .found-box{
 	margin: 70px auto 0;
 	padding: 50px;
@@ -525,7 +566,6 @@ label[for="pwd"]:after {
 }
 
 /*FOOTER*/
-
 .footer {
 	text-align: center;
 	color: #939598;
@@ -547,9 +587,7 @@ label[for="pwd"]:after {
 }*/
 
 /*PHONE*/
-
 @media screen and (max-width:700px) {
-
 	.colonne, .colonne2 {
 		float: none;
 		display: block;
@@ -582,7 +620,4 @@ label[for="pwd"]:after {
 	.box-sc {
 		font-size: 1.8rem;
 	}
-
-
-
 }
