@@ -249,7 +249,9 @@ article h3 {
 	color: #34B3A0;
 	box-shadow: 1px 1px 5px #CCC;
 	border: 2px solid #34B3A0;
-	padding: 25px 0;
+	padding: 27px 0;
+	border-radius: 5px;
+	cursor: pointer;
 }
 
 .btn-s{
@@ -328,6 +330,12 @@ article h3 {
 	margin: 2% auto;
 }
 
+#mceu_27 {
+	display: block;
+	width: 100%;
+	min-height: 30%;
+}
+
 #mceu_14-body {
 	display: none;
 }
@@ -336,31 +344,37 @@ article h3 {
 /*LOGIN*/
 
 .containerLogin {
-	height: 80vh;
+	height:80vh;
 }
 
 .customForm {
-	text-align: center;
+	text-align:center;
 }
 
 .customInput {
-	width: 35%;
-	height: 40px;
-	border-radius: 5px;
-	border-style: none;
-	padding: 1%;
-	letter-spacing: 1px;
-	background-color: #fff;
+	background-color:#fff;
+	border-radius:5px;
+	border-style:none;
+	color:#A6A6A6;
+	height:40px;
+	letter-spacing:1px;
+	padding:1%;
+	width:35%;
 }
 
 .customLabel {
-	display: inline-block;
-	font-size: 1.5rem;
-	margin: 2%;
+	display:inline-block;
+	font-size:2rem;
+	margin:2%;
 }
 
 .customButton {
-	margin-top: 3%;
+	border-style:none;
+	margin-top:3%;
+}
+
+button.customButton {
+	color:#fff;
 }
 
 /*404*/
@@ -434,36 +448,19 @@ article h3 {
 
 /*PHONE*/
 @media screen and (max-width:700px) {
-	.colonne, .colonne2 {
+	.colonne, .colonne2{
 		float: none;
 		display: block;
 		margin: 0 auto;
-		width: 95%;
-		height: 5%;
-		font-size: 1.8rem;
 	}
-	
+
+	.linkh{
+		float: none;
+		display: block;
+		margin: 0 auto;
+	}
+
 	.border{
 		display: none;
-	}
-
-	.colonne p{
-		display: none;
-	}
-
-	.colonne2 p{
-		display: none;
-	}
-
-	.icon{
-		margin-bottom: 3px;
-	}
-
-	.php-box, .js-box{
-		margin-bottom: 3px;
-	}
-
-	.box-sc {
-		font-size: 1.8rem;
 	}
 }
