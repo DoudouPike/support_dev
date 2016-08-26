@@ -16,9 +16,12 @@ if(isset($_POST["titre"], $_POST["textBox"], $_POST["objectif"], $_POST["choixLa
 	$langage = $_POST["choixLangage"];
 	$categorie = $_POST["choixCategorie"];
 
-		$res = mysqli_query($db, "INSERT INTO lessons (lang, category, title, goal, content) VALUES ('".$langage.", ".$categorie.", ".$titre.", ".$objectif.", ".$contenu."')");
 
-  mysql_query($res);
+$res = mysqli_query($db, "INSERT INTO lessons (lang, `category`, `date`, `title`, `goal`, `content`) VALUES ('".$langage."', '".$categorie."', CURRENT_DATE(), '".$titre."', '".$objectif."', '".$contenu."')");
+
+	// $sql = $mysqli->query("INSERT INTO article (title, entry, date_entered) VALUES ('".$title."','".$entry."', NOW())");
+	var_dump($res);
+  // mysql_query($res);
 
 	// 	while ($creation = mysqli_fetch_assoc($res))
 	// {
