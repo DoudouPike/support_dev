@@ -1,13 +1,15 @@
 <?php
 
 $lang = $_GET["lang"];
-$titleLang = "SELECT * FROM lessons WHERE lang = '".$lang."'";
+$req = "SELECT * FROM lessons WHERE lang = '".$lang."'";
 
-$dbLang = mysqli_query($db, $titleLang);
+$thisDb = mysqli_query($db, $req);
 
-while($titleList = mysqli_fetch_assoc($dbLang))
+while($thisDbTab = mysqli_fetch_assoc($thisDb))
 {	
-	$title = $titleList["title"];
+	$id = $thisDbTab["id"];
+	$title = $thisDbTab["title"];
+
 	if(isset($_SESSION["admin"]))
 	{
 		require("views/bloc-cours_admin.phtml");

@@ -4,33 +4,17 @@
     <h2>Modif</h2>
     <form method="post" align="center" class="clearfix">
 
-        <input class="creation customInput" type="text" name="titre" placeholder="Titre du cours" value="" required="required" />
+    	<input type="hidden" value="<?= $id ?>" >
+		
+		<label class="creation customLabel" for="titre">Titre :</label>
+        <input class="creation customInput" type="text" name="titre" placeholder="Titre du cours" id="titre" value="<?= $titre ?>" required="required" />
+		
+		<label class="creation customLabel" for="objectif">Titre :</label>
+        <input class="creation customInput" type="textarea" name="objectif" value="<?= $objectif ?>" placeholder="Votre objectif içi" id="objectif" required="required"/>
 
-        <textarea class="moduleCreation" name="textBox">Easy (and free!) You should check out our premium features.</textarea>
+        <textarea class="moduleCreation" name="textBox"><?= $contenu ?></textarea>
 
-        <input class="creation customInput" type="textarea" name="objectif" value="" placeholder="Votre objectif içi" required="required"/>
-
-        <label class="creation" for="Langage">Langage : </label>
-
-        <select class="creation roll customInput" name="choixLangage" id="Langage">
-            <option value="">Sélectionnez votre Langage</option>
-            <option value="html">HTML</option>
-            <option value="css">CSS</option>
-            <option value="php">PHP</option>
-            <option value="js">JS</option>
-        </select>
-
-        <label class="creation" for="Categorie">Categorie : </label>
-
-        <select class="creation roll customInput" name="choixCategorie" id="Categorie">
-            <option value="">Sélectionnez votre Categorie</option>
-            <option value="0" selected>introduction</option>
-            <option value="1">Step 1</option>
-            <option value="2">Step 2</option>
-            <option value="3">Step 3</option>
-        </select>
-
-        <button type="submit" name="register" class="publish btn btn-primary btn-block btn-large cre">Publier</button>
+        <button type="submit" class="publish btn btn-primary btn-block btn-large cre">Publier</button>
 
     </form>
 </div>

@@ -1,17 +1,16 @@
 <?php
 
 $titlePage = urldecode($_GET["titre"]);
-$allSingle = "SELECT * FROM lessons WHERE title = '".$titlePage."'";
-$dbSingle = mysqli_query($db, $allSingle);
+$req = "SELECT * FROM lessons WHERE title = '".$titlePage."'";
+$thisDb = mysqli_query($db, $req);
 
-while($single = mysqli_fetch_assoc($dbSingle))
-{	
-	$titre = $titlePage;
-	$objectif = $single["goal"];
-	$contenu = $single["content"];
-	$d_creation = $single["date"];
-	$d_modif = $single["date_last"];
-}
+$thisDbTab = mysqli_fetch_assoc($thisDb);
+
+$titre = $titlePage;
+$objectif = $thisDbTab["goal"];
+$contenu = $thisDbTab["content"];
+$d_creation = $thisDbTab["date"];
+$d_modif = $thisDbTab["date_last"];
 
 if(isset($titre, $objectif, $contenu))
 {
