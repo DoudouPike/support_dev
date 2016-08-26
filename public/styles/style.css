@@ -291,6 +291,32 @@ article h3 {
 	color: #34B3A0;
 }
 
+/*SINGLE*/
+
+.border-single{
+	margin: 20px;
+	border-bottom: 1px solid #204056;
+}
+
+.objectifs p{
+	padding: 15px;
+	box-shadow: 1px 1px 5px #CCC;
+	background: #fff;
+}
+
+.objectifs h3{
+	background: #34B3A0;
+	color: #FFF;
+	padding: 15px;
+	box-shadow: 1px 1px 5px #CCC;	
+}
+
+.contenu{
+	padding: 15px;
+	box-shadow: 1px 1px 5px #CCC;
+	background: #fff;
+}
+
 /*CREATION*/
 .container .creation {
 /*	background-color: red;*/
