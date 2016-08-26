@@ -21,14 +21,11 @@ if(isset($_POST["choixLangage"], $_POST["choixCategorie"], $_POST["titre"], $_PO
 	}
 	else{
 
-		var_dump($res);
-	}
+		header("Location: index.php?page=cours&lang=$langage");
+		exit;
 
-	// header("Location: index.php?page=accueil");
-	// exit;
-	var_dump($_POST);
-	// var_dump($_POST['choixLangage']);
-	// var_dump($_POST['choixCategorie']);
+		}
+
 }
 
 ?>				
