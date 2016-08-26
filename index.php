@@ -5,14 +5,14 @@ $date = date('D j F Y H:i');
 // $date_post = date();
 $error = "";
 $page = "home";
-$access = ["home", "login", "logout", "cours", "single", "creation", "404"]; //ajouter les autres pages
+$access = ["home", "login", "logout", "cours", "single", "creation", "modif", "404"]; //ajouter les autres pages
 
 if(isset($_GET["page"]) && in_array($_GET["page"], $access))
 {
 	$page = $_GET["page"];
 }
 
-$traitementList = ["creation", "login"];
+$traitementList = ["creation", "login", "modif"];
 
 if(in_array($page, $traitementList))
 {
