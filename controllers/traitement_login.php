@@ -2,14 +2,6 @@
 
 if(isset($_POST["name"], $_POST["pwd"]))
 {
-	$res = mysqli_query($db, "SELECT login,password FROM users WHERE login = '".$_POST["name"]."'");
-	
-	while ($user = mysqli_fetch_assoc($res))
-	{
-		$loginAdmin = $user['login'];
-		$mdpAdmin = $user['password'];
-	}
-
 	$name = $_POST["name"];
 	$pwd = $_POST["pwd"];
 
@@ -19,6 +11,15 @@ if(isset($_POST["name"], $_POST["pwd"]))
 	}
 	else
 	{
+		$res = mysqli_query($db, "SELECT id,login,password FROM users WHERE login = '".$_POST["name"]."'");
+
+		while ($user = mysqli_fetch_assoc($res))
+		{
+			$idAdmin = $user['id'];
+			$loginAdmin = $user['login'];
+			$mdpAdmin = $user['password'];
+		}
+
 		if($name != $loginAdmin && md5($pwd) == $user['password'])
 		{
 			$error = "L'identifiant ou le mot de passe est incorrecte !";
