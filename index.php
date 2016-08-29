@@ -3,6 +3,7 @@ session_start();
 $db = mysqli_connect("localhost", "root", "troiswa", "support_dev");
 $error = "";
 $page = "home";
+
 $access = ["home", "login", "logout", "cours", "single", "404", "register"]; //ajouter les autres pages
 $accessAdmin = ["home", "login", "logout", "cours", "single", "404", "register", "creation", "modif", "delete"];
 if(isset($_SESSION["admin"]))
