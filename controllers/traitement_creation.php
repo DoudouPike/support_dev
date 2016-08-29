@@ -1,5 +1,6 @@
 <?php
-	if(isset($_POST["choixLangage"], $_POST["choixCategorie"], $_POST["titre"], $_POST["objectif"], $_POST["textBox"])){
+	if(isset($_POST["choixLangage"], $_POST["choixCategorie"], $_POST["titre"], $_POST["objectif"], $_POST["textBox"]))
+	{
 
 		$titre = mysqli_real_escape_string($db, $_POST["titre"]);
 		$contenu = mysqli_real_escape_string($db, $_POST["textBox"]);

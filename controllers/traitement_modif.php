@@ -23,7 +23,7 @@ if(isset($_POST["titre"], $_POST["objectif"], $_POST["textBox"]))
 			else
 				$error = 'Internal server error';
 		}
-		header("Location: index.php?page=single&titre='".$titre."'");
+		header("Location: index.php?page=single&id=".$id."");
 		exit;
 	}
 	
