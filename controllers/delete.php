@@ -1,10 +1,3 @@
 <?php
-	if(isset($_SESSION["admin"]))
-	{
-		require('views/delete.phtml');
-	}
-	else
-	{
-		require("controllers/404.php");
-	}
+require("controllers/404.php");
 ?>
