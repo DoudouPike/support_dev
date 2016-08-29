@@ -47,6 +47,10 @@ h2 {
 	transition-duration: 0.3s;
 }
 
+.btnComm{
+	font-size: 13px;
+}
+
 .new-btn:hover{
 	padding: 13px 18px;
 	border: 2px solid #34B3A0;
