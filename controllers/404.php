@@ -1,3 +1,3 @@
 <?php
-require("views/404.phtml");
+	require("views/404.phtml");
 ?>

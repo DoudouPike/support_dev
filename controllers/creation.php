@@ -1,3 +1,3 @@
 <?php
-require('views/creation.phtml');
+	require('views/creation.phtml');
 ?>
