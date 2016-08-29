@@ -1,5 +1,6 @@
 <?php
-if (isset($_POST["register"]))
+
+if(isset($_POST["register"]))
 {
 	$login = mysqli_real_escape_string($db, $_POST["pseudo"]);
 	$email = mysqli_real_escape_string($db, $_POST["email"]);
@@ -12,15 +13,13 @@ if (isset($_POST["register"]))
 	}
 	else
 	{
-		$req = "SELECT email FROM users";
+		$req = "SELECT email FROM users WHERE email='".$email."'";
 		$emails = mysqli_query($db, $req);
 
-		while($emailTab = mysqli_fetch_assoc($emails))
+		$emailTab = mysqli_fetch_assoc($emails);
+		if($emailTab)
 		{
-			if($emailTab["email"] == $email)
-			{
-				$error = "Cet email est déjà utilisé";
-			}
+			$error = "Cette adresse email est déjà utilisée.";
 		}
 
 		if($password != $password2)
@@ -29,32 +28,11 @@ if (isset($_POST["register"]))
 		}
 		else
 		{
-			$res = mysqli_query($db, "INSERT INTO users (login, `email`, `password`) VALUES ('$login', '$email', '$password')");
-			// header("Location: index.php?page=login");
-			// exit;
-			var_dump(mysqli_errno($db));
-			if($res == false){
-
-				if (mysqli_errno($db) == 1062){
-					$error = "Pseudo ou mail déjà existant";
-					var_dump($error);
-				}
-				// else{
-				// 	$error = 'weeeee';
-				// 	var_dump($error);
-				// }
-			}
-			else{
-
-				// header("Location: index.php?page=login");
-				// exit;
-				// var_dump($res);
-			}
-
+			$req = "INSERT INTO users (login, email, password) VALUES ('".$login."', '".$email."', '".$password."')";
+			$res = mysqli_query($db, $req);
+			
+			header("Location: index.php?page=login");
+			exit;
 		}
-	}	
-}
-
-
-
-?>				
+	}
+}		

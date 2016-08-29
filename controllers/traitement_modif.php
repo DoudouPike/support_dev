@@ -12,8 +12,7 @@ if(isset($_POST["titre"], $_POST["objectif"], $_POST["textBox"]))
 	else
 	{
 		$id = $_GET["id"];
-		$req = "UPDATE lessons SET title = '$titre', goal = '$objectif', content = '$textBox' WHERE id = $id";
-
+		$req = "UPDATE lessons SET title = '".$titre."', goal = '".$objectif."', content = '".$textBox."' WHERE id = ".$id;
 		$thisDb = mysqli_query($db, $req);
 
 		if($res == false)
@@ -24,10 +23,7 @@ if(isset($_POST["titre"], $_POST["objectif"], $_POST["textBox"]))
 			else
 				$error = 'Internal server error';
 		}
-
-
-
-		header("Location: index.php?page=single&titre=$titre");
+		header("Location: index.php?page=single&titre='".$titre."'");
 		exit;
 	}
 	
