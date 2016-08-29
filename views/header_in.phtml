@@ -3,7 +3,7 @@
 	<nav class="menu">
 		<ul class="clearfix">
 			<li class="loginHeader"><a class="btn" href="index.php?page=logout">Logout</a></li>
-			<li class="loginHeader">Connecté en tant que : <?= $_SESSION["admin"] ?></li>
+			<li class="loginHeader">Connecté en tant que : <?= htmlentities($_SESSION["admin"]) ?></li>
 		</ul>
 	</nav>
 </header>

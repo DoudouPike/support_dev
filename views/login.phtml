@@ -2,7 +2,7 @@
 	<h2>Connexion :</h2>
 	<form class="customForm" method="POST">
 
-		<div><?= $error ?></div>
+		<div><?= htmlentities($error) ?></div>
 
 		<label class="customLabel" for="name">Identifiant Administrateur :</label><br>
 		<input class="customInput" type="text" name="name" id="name"><br>
