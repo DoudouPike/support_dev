@@ -1,25 +1,27 @@
 <div class="container">	
 	<h2>Inscription</h2>
 	<form method="post" align="center" class="clearfix">
+
+		<div><?= $error ?></div>
 		
 		<label class="creation customLabel label-float" for="pseudo"> Pseudo : </label>
-	    <input class="creation customInput input-float" type="text" name="pseudo" placeholder="Votre pseudo"  value="" required="required" />
+	    <input class="creation customInput input-float" type="text" name="pseudo" placeholder="Votre pseudo"  value=""  />
 
 	    <br>
 		
 		<label class="creation customLabel label-float" for="email"> Adresse Mail : </label>
-	    <input class="creation customInput input-float" type="email" name="email" placeholder="Votre email"  value="" required="required" />
+	    <input class="creation customInput input-float" type="email" name="email" placeholder="Votre email"  value=""  />
 
 	    <br>
 	    
 	    <!-- <h2> </h2> -->
 	    <label class="creation customLabel label-float" for="password"> Mot de passe : </label>
-	    <input class="creation customInput input-float" type="password" name="password" placeholder="Votre password"  value="" required="required" />
+	    <input class="creation customInput input-float" type="password" name="password" placeholder="Votre mot de passe"  value=""  />
 
 	    <br>
 	    
 	    <label class="creation customLabel label-float" for="password2"> Confirmer mot de passe : </label>
-	    <input class="creation customInput input-float" type="password2" name="password2" placeholder="Votre password2"  value="" required="required" />
+	    <input class="creation customInput input-float" type="password" name="password2" placeholder="Confirmez votre mot de passe"  value=""  />
 
 	    <br>   
 		
