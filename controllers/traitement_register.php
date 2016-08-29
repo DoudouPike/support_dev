@@ -1,5 +1,5 @@
 <?php
-	if (empty($_SESSION)) {
+	if (!empty($_SESSION)) {
 		require('controllers/404.php');
 	}
 
@@ -15,19 +15,15 @@
 			}
 			else{
 				$res = mysqli_query($db, "INSERT INTO users (login, `email`, `password`) VALUES ('$login', '$email', '$password')");
-				// header("Location: index.php?page=login");
-				// exit;
-	var_dump(mysqli_errno($db));
+				
+				var_dump(mysqli_errno($db));
+				
 				if($res == false){
 
 					if (mysqli_errno($db) == 1062){
 						$error = "Pseudo ou mail déjà existant";
 						var_dump($error);
 					}
-					// else{
-					// 	$error = 'weeeee';
-					// 	var_dump($error);
-					// }
 				}
 				else{
 

@@ -1,15 +1,27 @@
 <?php
-	$select_title = mysqli_query($db, "SELECT title, lang FROM lessons WHERE id = '".$_GET["id"]."'");
-	
-	$title = mysqli_fetch_assoc($select_title);
 
-	$title_delete = $title['title'];
-	$title_lang = $title['lang'];
+	if(isset($_GET['id'])){
+		$idSaisi = $_GET['id'];
+		$select_title = mysqli_query($db, "SELECT title, lang FROM lessons WHERE id = '".$idSaisi."'");
+		$title = mysqli_fetch_assoc($select_title);
+		$title_delete = $title['title'];
+		$title_lang = $title['lang'];
 
-	if(isset($_POST["delete"])){
-		$res = mysqli_query($db, "DELETE FROM lessons WHERE id = '".$_GET["id"]."'");
+		if(empty($idSaisi)){
+			header("Location: index.php?page=404");
+			exit;
+		}
 
-		header("Location: index.php?page=cours&lang=$title_lang");
-		exit;
+		if(isset($_POST["delete"])){
+			
+
+			$res = mysqli_query($db, "DELETE FROM lessons WHERE id = '".$idSaisi."'");
+
+			header("Location: index.php?page=cours&lang=$title_lang");
+			exit;
+		}
+	}
+	else{
+		$title_delete = 'Aucun article selectionné';
 	}
 ?>
