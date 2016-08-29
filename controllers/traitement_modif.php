@@ -1,9 +1,9 @@
 <?php
 if(isset($_POST["titre"], $_POST["objectif"], $_POST["textBox"]))
 {
-	$titre = $_POST["titre"];
-	$objectif = $_POST["objectif"];
-	$textBox = $_POST["textBox"];
+	$titre = mysqli_real_escape_string($_POST["titre"]);
+	$objectif = mysqli_real_escape_string($_POST["objectif"]);
+	$textBox = mysqli_real_escape_string($_POST["textBox"]);
 
 	if(empty($titre) || empty($objectif) || empty($textBox))
 	{
@@ -11,7 +11,6 @@ if(isset($_POST["titre"], $_POST["objectif"], $_POST["textBox"]))
 	}
 	else
 	{
-		var_dump($_POST);
 		$id = $_GET["id"];
 		$req = "UPDATE lessons SET title = '$titre', goal = '$objectif', content = '$textBox' WHERE id = $id";
 
