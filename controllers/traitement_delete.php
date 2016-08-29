@@ -1,7 +1,7 @@
 <?php
 
 	if(isset($_GET['id'])){
-		$idSaisi = $_GET['id'];
+		$idSaisi = intval($_GET['id']);
 		$select_title = mysqli_query($db, "SELECT id, title, lang FROM lessons WHERE id = '".$idSaisi."'");
 		$title = mysqli_fetch_assoc($select_title);
 		$title_id = $title['id'];
@@ -18,7 +18,6 @@
 		}
 
 		if(isset($_POST["delete"])){
-
 			$res = mysqli_query($db, "DELETE FROM lessons WHERE id = '".$idSaisi."'");
 
 			header("Location: index.php?page=cours&lang=$title_lang");
