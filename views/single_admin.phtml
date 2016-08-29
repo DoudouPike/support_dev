@@ -1,24 +1,14 @@
 <div class="container">
-
-
 	<h2><?= $single["title"] ?></h2>
-
-
-
 	<div class="objectifs">
 		<h3>Les objectifs de ce cours :</h3>
 		<p><?= $single["goal"] ?></p>
 	</div>
-
 	<div class="border-single"></div>
-
 	<div class="contenu">
 		<p><?= $single["content"] ?></p>
 	</div>
-
 	<p class="p-date">Date création : <?= htmlentities($single["date"]) ?> // Date dernière modif : <?= htmlentities($single["date_last"]); ?></p>
-
 	<a class="btn-in" href="index.php?page=modif&id=<?= $id ?>"><i class="fa fa-wrench icon-ms" aria-hidden="true"></i> Modifier</a>
-
 	<a class="btn-in" href="index.php?page=delete&id=<?= $id ?>"><i class="fa fa-trash" aria-hidden="true"></i> Supprimer</a>
 </div>

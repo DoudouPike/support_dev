@@ -6,7 +6,6 @@ if(isset($_POST["register"]))
 	$email = mysqli_real_escape_string($db, $_POST["email"]);
 	$password = mysqli_real_escape_string($db, $_POST["password"]);
 	$password2 = mysqli_real_escape_string($db, $_POST["password2"]);
-
 	if(empty($login) || empty($email) || empty($password) || empty($password2))
 	{
 		$error = "Merci de compléter tous les champs...";
