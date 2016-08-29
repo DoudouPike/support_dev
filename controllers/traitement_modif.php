@@ -1,9 +1,9 @@
 <?php
 if(isset($_POST["titre"], $_POST["objectif"], $_POST["textBox"]))
 {
-	$titre = mysqli_real_escape_string($_POST["titre"]);
-	$objectif = mysqli_real_escape_string($_POST["objectif"]);
-	$textBox = mysqli_real_escape_string($_POST["textBox"]);
+	$titre = mysqli_real_escape_string($db, $_POST["titre"]);
+	$objectif = mysqli_real_escape_string($db, $_POST["objectif"]);
+	$textBox = mysqli_real_escape_string($db, $_POST["textBox"]);
 
 	if(empty($titre) || empty($objectif) || empty($textBox))
 	{

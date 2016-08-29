@@ -8,7 +8,7 @@
 
 		while($thisDbTab = mysqli_fetch_assoc($thisDb))
 		{	
-		$id = mysqli_real_escape_string($db, $thisDbTab["id"]);
+		$id = intval($thisDbTab["id"]);
 		$title = mysqli_real_escape_string($db, $thisDbTab["title"]);
 
 			if(isset($_SESSION["admin"]))

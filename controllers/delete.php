@@ -1,7 +1,7 @@
 <?php
 	if(isset($_SESSION["admin"]))
 	{
-		$idSaisi = mysqli_real_escape_string($db, $_GET['id']);
+		$idSaisi = intval($_GET['id']);
 		$select_title = mysqli_query($db, "SELECT title, lang FROM lessons WHERE id = '".$idSaisi."'");
 		$title = mysqli_fetch_assoc($select_title);
 		$title_delete = $title['title'];

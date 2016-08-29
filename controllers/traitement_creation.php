@@ -5,7 +5,7 @@
 		$contenu = mysqli_real_escape_string($db, $_POST["textBox"]);
 		$objectif = mysqli_real_escape_string($db, $_POST["objectif"]);
 		$langage = mysqli_real_escape_string($db, $_POST["choixLangage"]);
-		$categorie = mysqli_real_escape_string($db, $_POST["choixCategorie"]);
+		$categorie = intval($_POST["choixCategorie"]);
 
 		$res = mysqli_query($db, "INSERT INTO lessons (lang, `category`, `date`, `title`, `goal`, `content`) VALUES ('".$langage."', '".$categorie."', CURDATE(), '".$titre."', '".$objectif."', '".$contenu."')");
 
