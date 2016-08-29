@@ -1,5 +1,4 @@
 /*GLOBAL*/
-
 body {
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	font-size: 18px;
@@ -34,9 +33,7 @@ h2 {
 	clear: both;
 }
 
-
 /*HEADER*/
-
 .header {
 	background-color: #fff;
 	height: 80px;
@@ -104,12 +101,10 @@ h2 {
   text-decoration: none;
 }
 
-
 /*HEADER ADMIN*/
 
 
 /*HOME*/
-
 article h3 {
 	text-align: center;
 	font-size: 25px;
@@ -214,7 +209,6 @@ article h3 {
 
 
 /*CATEGORIES*/
-
 .sous-cat{
 	text-align: left;
 	font-size: 25px;
@@ -308,7 +302,6 @@ article h3 {
 
 
 /*SINGLE*/
-
 .border-single{
 	margin: 20px;
 	border-bottom: 1px solid #204056;
@@ -383,7 +376,6 @@ article h3 {
 }
 
 /*CREATION*/
-
 .container .creation {
 	display: block;
 	width: 60%;
@@ -400,7 +392,6 @@ textarea {
 
 
 /*LOGIN*/
-
 .containerLogin {
 	height:80vh;
 }
@@ -436,7 +427,6 @@ button.customButton {
 }
 
 /*404*/
-
 .found-box{
 	margin: 70px auto 0;
 	padding: 50px;
@@ -492,7 +482,6 @@ button.customButton {
 }
 
 /*FOOTER*/
-
 .footer {
 	text-align: center;
 	margin-top: 100px;
