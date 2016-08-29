@@ -1,16 +1,31 @@
-<h2>Inscription</h2>
-    <form method="post" align="center" class="clearfix">
+<div class="container">	
+	<h2>Inscription</h2>
+	<form method="post" align="center" class="clearfix">
+		
+		<label class="creation customLabel label-float" for="pseudo"> Pseudo : </label>
+	    <input class="creation customInput input-float" type="text" name="pseudo" placeholder="Votre pseudo"  value="" required="required" />
 
-        <input class="creation customInput" type="text" name="pseudo" placeholder="Votre pseudo"  value="" required="required" />
+	    <br>
+		
+		<label class="creation customLabel label-float" for="email"> Adresse Mail : </label>
+	    <input class="creation customInput input-float" type="email" name="email" placeholder="Votre email"  value="" required="required" />
 
-        <input class="creation customInput" type="email" name="email" placeholder="Votre email"  value="" required="required" />
-        
-        <h2> </h2>
-        <label class="creation customLabel" for="password">Mot de passe : </label>
-        <input class="creation customInput" type="password" name="password" placeholder="Votre password"  value="" required="required" />
-        
-        <input class="creation customInput" type="password2" name="password2" placeholder="Votre password2"  value="" required="required" />        
+	    <br>
+	    
+	    <!-- <h2> </h2> -->
+	    <label class="creation customLabel label-float" for="password"> Mot de passe : </label>
+	    <input class="creation customInput input-float" type="password" name="password" placeholder="Votre password"  value="" required="required" />
 
-        <button type="submit" name="register" class="customButton btn cre">S'inscrire</button>
+	    <br>
+	    
+	    <label class="creation customLabel label-float" for="password2"> Confirmer mot de passe : </label>
+	    <input class="creation customInput input-float" type="password2" name="password2" placeholder="Votre password2"  value="" required="required" />
 
-    </form>
+	    <br>   
+		
+		<div class="clearfix"></div>
+
+	    <button type="submit" name="register" class="customButton btn cre">S'inscrire</button>
+
+	</form>
+</div>
