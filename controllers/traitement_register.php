@@ -28,7 +28,7 @@ if(isset($_POST["register"]))
 		}
 		else
 		{
-			$req = "INSERT INTO users (login, email, password) VALUES ('".$login."', '".$email."', '".$password."')";
+			$req = "INSERT INTO users (login, email, password) VALUES ('".$login."', '".$email."', '".md5($password)."')";
 			$res = mysqli_query($db, $req);
 			
 			header("Location: index.php?page=login");
