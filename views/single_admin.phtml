@@ -16,7 +16,7 @@
 		<p><?= $single["content"] ?></p>
 	</div>
 
-	<p class="p-date">Date création : <?= $single["date"] ?> // Date dernière modif : <?= $single["date_last"]; ?></p>
+	<p class="p-date">Date création : <?= htmlentities($single["date"]) ?> // Date dernière modif : <?= htmlentities($single["date_last"]); ?></p>
 
 	<a class="btn-in" href="index.php?page=modif&id=<?= $id ?>"><i class="fa fa-wrench icon-ms" aria-hidden="true"></i> Modifier</a>
 

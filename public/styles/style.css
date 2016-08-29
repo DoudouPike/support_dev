@@ -408,6 +408,7 @@ textarea {
 	height:40px;
 	letter-spacing:1px;
 	padding:1%;
+	margin: 20px;
 	width:35%;
 }
 
@@ -460,7 +461,7 @@ button.customButton {
 }   
 
 .link-backHome{
-	margin-left: 40%;
+	margin-left: 23%;
 }
 
 .backHome{

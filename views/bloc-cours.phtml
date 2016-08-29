@@ -1,10 +1,10 @@
 <div class="clearfix">
 		
-	<a href="index.php?page=single&titre=<?= urlencode($title) ?>" class="linkh">
+	<a href="index.php?page=single&titre=<?= htmlentities(urlencode($title)) ?>" class="linkh">
 		<div class="box-sc-out">
 			<p>
 				<i class="fa fa-code icon-cat" aria-hidden="true"></i>
-				 <?= $title ?>
+				 <?= htmlentities($title)?>
 			</p>
 		</div>
 	</a>

@@ -6,7 +6,7 @@
     <h2>Création</h2>
     <form method="post" align="center" class="clearfix">
 
-        <div><?= $error ?></div>
+        <div><?= htmlentities($error)?></div>
 
         <label class="creation customLabel" for="Langage">Langage : </label>
         <select class="creation roll customInput" name="choixLangage" id="Langage">

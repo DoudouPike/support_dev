@@ -4,7 +4,7 @@
     <h2>Modif</h2>
     <form method="post" align="center" class="clearfix">
 
-    	<div><?= $error ?></div>
+    	<div><?= htmlentities($error) ?></div>
 
     	<input type="hidden" value="<?= $id ?>" >
 		
@@ -14,7 +14,7 @@
 		<label class="creation customLabel" for="objectif">Objectif du cours :</label>
         <input class="creation customInput" type="textarea" name="objectif" value="<?= $thisDbTab["goal"] ?>" placeholder="Votre objectif içi" id="objectif" required="required"/>
 
-        <textarea class="moduleCreation" name="textBox"><?= $thisDbTab["content"] ?></textarea>
+        <textarea class="moduleCreation" name="textBox"><?= htmlentities($thisDbTab["content"]) ?></textarea>
 
         <button type="submit" class="publish btn btn-primary btn-block btn-large cre">Publier</button>
 
