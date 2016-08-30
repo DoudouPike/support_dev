@@ -39,12 +39,17 @@ h2 {
 	background: #34B3A0;
 	color: #fff;
 	font-size: 20px;
+	text-decoration: none;
 	border: none;
 	border-radius: 4px;
 	box-shadow: 1px 1px 5px grey;
 	cursor: pointer;
 	transition-property: background;
 	transition-duration: 0.3s;
+}
+
+.ib{
+	display: inline-block;
 }
 
 .btnComm{
@@ -70,9 +75,8 @@ h2 {
 }
 
 .titreHeader {
-	font-family: 'Poiret One', cursive;
+	font-family: 'Lobster', cursive;
 	font-size: 3rem;
-	font-weight: bold;
     color: #204056;
     float: left;
     height: 1%;
