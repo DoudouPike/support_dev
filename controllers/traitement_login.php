@@ -3,7 +3,7 @@
 if(isset($_POST["name"], $_POST["pwd"]))
 {
 	$name = mysqli_real_escape_string($db, $_POST["name"]);
-	$pwd = mysqli_real_escape_string($db	, $_POST["pwd"]);
+	$pwd = mysqli_real_escape_string($db, $_POST["pwd"]);
 	// var_dump($_POST);
 
 	if(empty($name) || empty($pwd))
@@ -24,11 +24,7 @@ if(isset($_POST["name"], $_POST["pwd"]))
 
 		if(isset($idAdmin, $loginAdmin, $pwdAdmin))
 		{
-			if($name != $loginAdmin && md5($pwd) == $pwdAdmin)
-			{
-				$error = "L'identifiant ou le mot de passe est incorrecte...";
-			}
-			else
+			if($name === $loginAdmin && md5($pwd) === $pwdAdmin)
 			{
 				$_SESSION["id"] = $idAdmin;
 				$_SESSION["admin"] = $loginAdmin;
@@ -36,6 +32,12 @@ if(isset($_POST["name"], $_POST["pwd"]))
 				header("Location: index.php?page=home");
 				exit;
 			}
+			else if($name != $loginAdmin || md5($pwd) != $pwdAdmin)
+			{
+				$error = "L'identifiant ou le mot de passe est incorrecte...";
+			}
+		}else{
+			$error = "L'identifiant ou le mot de passe est incorrecte...";
 		}
 	}
 }
