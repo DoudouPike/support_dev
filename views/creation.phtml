@@ -1,13 +1,14 @@
 <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
-<script>tinymce.init({ selector:'textarea'});</script>
+<script>tinymce.init({plugins: "autoresize", forced_root_block:"" ,selector:'textarea'});</script>
 <div class="container">
     <h2>Création</h2>
     <form method="post" align="center" class="clearfix">
 
         <input class="creation customInput" type="text" name="titre" placeholder="Titre du cours" value="" required="required" />
 
-        <textarea class="moduleCreation" name="textBox">Easy (and free!) You should check out our premium features.</textarea>
+        <textarea class="moduleCreation" name="textBox">
+        </textarea>
 
         <input class="creation customInput" type="textarea" name="objectif" value="" placeholder="Votre objectif içi" required="required"/>
 
