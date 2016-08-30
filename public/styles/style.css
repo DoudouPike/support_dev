@@ -63,8 +63,11 @@ h2 {
 	color: #34B3A0;
 }
 
-/*HEADER*/
+.blue {
+	color: #34B3A0;
+}
 
+/*HEADER*/
 .header {
 	background-color: #fff;
 	height: 80px;
@@ -231,7 +234,7 @@ article h3 {
 
 .border-h{
 	width: 100%;
-	margin-top: 60px;
+	margin: 30px 0;
 	border-bottom: 1px solid #BBB;
 }
 
@@ -251,7 +254,7 @@ article h3 {
 	background: #fff;
 	color: #204056;
 	padding: 40px;
-	margin-bottom: 10px;
+	margin: 5px 0;
 	box-shadow: 1px 1px 5px #CCC;
 	transition-property: background;
 	transition-duration: 0.3s;
@@ -268,11 +271,6 @@ article h3 {
 	padding: 25px 0;
 	border-radius: 5px;
 	cursor: pointer;
-}
-
-
-.btn-s{
-	margin-top: 5px;
 }
 
 .btn-m:hover, .btn-s:hover{
