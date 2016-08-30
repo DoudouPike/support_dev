@@ -9,7 +9,7 @@
         <input class="creation customInput" type="text" name="titre" placeholder="Titre du cours" id="titre" value="<?= $articleTab["title"] ?>" required="required" />	
 		<label class="creation customLabel" for="objectif">Objectif du cours :</label>
         <input class="creation customInput" type="textarea" name="objectif" value="<?= $articleTab["goal"] ?>" placeholder="Votre objectif içi" id="objectif" required="required"/>
-        <textarea class="moduleCreation" name="textBox"><?=$articleTab["content"] ?></textarea>
+        <textarea class="moduleCreation" name="textBox"><?= htmlentities($articleTab["content"]) ?></textarea>
         <button type="submit" class="new-btn">Publier</button>
     </form>
 </div>
