@@ -352,6 +352,8 @@ article h3 {
 	width: 100%;
 	height: 100px;
 	margin-top: 50px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px #CCC inset;
 	font-family: Arial;
 }
 
@@ -450,7 +452,7 @@ button.customButton {
 }
 
 .found-box img{
-	margin-left: 26%;
+	/*margin-left: 26%;*/
 	height: 300px;
 }
 
@@ -473,12 +475,13 @@ button.customButton {
 }   
 
 .link-backHome{
-	margin-left: 23%;
+	text-align: center;
 }
 
 .backHome{
 	display: inline-block;
 	text-align: center;
+	margin: 0 auto;
 	color: #fff;
 	background: #34B3A0;
 	border-radius: 50%;
@@ -486,6 +489,10 @@ button.customButton {
 	box-shadow: 1px 1px 5px grey;
 	transition-property: background, border-radius;
 	transition-duration: 0.8s;
+}
+
+.found-box{
+	text-align: center;
 }
 
 .found-box a:hover .backHome{
