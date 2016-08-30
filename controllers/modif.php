@@ -4,10 +4,10 @@
 		$id = intval($_GET["id"]);
 
 		$req = "SELECT title,goal,content FROM lessons WHERE id = '".$id."'";
-		$thisDb = mysqli_query($db, $req);
+		$res = mysqli_query($db, $req);
 
-		$thisDbTab = mysqli_fetch_assoc($thisDb);
-		if($thisDbTab)
+		$articleTab = mysqli_fetch_assoc($res);
+		if($articleTab)
 		{
 			require("views/modif.phtml");
 		}

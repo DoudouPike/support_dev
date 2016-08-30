@@ -1,8 +1,7 @@
 <div class="container">
 	<div><?= htmlentities($error)?></div>
-	<h2><?= htmlentities($_GET["lang"]) ?></h2>
-	<div class="border-h"></div>	
-		<h3 class="sous-cat">CATEGORY <?= htmlentities($title_lang) ?></h3>
-		<?php require("controllers/bloc-cours.php"); ?>
+	<h2><?= htmlentities($lang) ?></h2>
+	<div class="border-h"></div>
+		<?php require("controllers/bloc-category.php"); ?>
 	</div>
 </div>

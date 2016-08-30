@@ -2,10 +2,11 @@
 session_start();
 $db = mysqli_connect("localhost", "root", "troiswa", "support_dev");
 $error = "";
+$error404 = "";
 $page = "home";
 
-$access = ["home", "login", "logout", "cours", "single", "404", "register"];
-$accessAdmin = ["home", "login", "logout", "cours", "single", "404", "register", "creation", "modif", "delete"];
+$access = ["home", "login", "logout", "cours", "single", "404", "register", "bloc-cours"];
+$accessAdmin = ["home", "login", "logout", "cours", "single", "404", "register", "creation", "modif", "delete", "bloc-cours"];
 if(isset($_SESSION["admin"]))
 {
 	if(isset($_GET["page"]) && in_array($_GET["page"], $accessAdmin))

@@ -1,16 +1,8 @@
 <div class="container">
     <h2>Création</h2>
     <form method="post" align="center" class="clearfix">
-
-        <input class="creation customInput" type="text" name="titre" placeholder="Titre du cours" value="" required="required" />
-
-        <textarea class="moduleCreation" name="textBox">
-        </textarea>
-
-        <input class="creation customInput" type="textarea" name="objectif" value="" placeholder="Votre objectif içi" required="required"/>
-
+        
         <label class="creation customLabel" for="Langage">Langage : </label>
-
         <select class="creation roll customInput" name="choixLangage" id="Langage">
             <option value="">Sélectionnez votre Langage</option>
             <option value="html">HTML</option>
@@ -23,11 +15,21 @@
 
         <select class="creation roll customInput" name="choixCategorie" id="Categorie">
             <option value="">Sélectionnez votre Categorie</option>
-            <option value="0" selected>introduction</option>
-            <option value="1">Step 1</option>
-            <option value="2">Step 2</option>
-            <option value="3">Step 3</option>
+            <option value="0" selected>Introduction</option>
+            <option value="1">Premiers pas</option>
+            <option value="2">Connaissances générales</option>
+            <option value="3">Aller plus loin</option>
         </select>
+        
+        <label class="creation customLabel" for="titre">Titre : </label>
+        <input class="creation customInput" type="text" name="titre" placeholder="Titre du cours" value="" id="titre" required="required" />
+        
+        <label class="creation customLabel" for="objectif">Objectif : </label>
+        <input class="creation customInput" type="textarea" name="objectif" value="" id="objectif" placeholder="Objectif de ce cours" required="required"/>
+    
+        <label class="creation customLabel" for="contenu">Contenu : </label>
+        <textarea id="contenu" class="moduleCreation" name="textBox">
+        </textarea>
 
         <button type="submit" name="register" class="new-btn">Publier</button>
 
