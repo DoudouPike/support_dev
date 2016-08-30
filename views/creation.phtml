@@ -1,8 +1,14 @@
 <div class="container">
     <h2>Création</h2>
     <form method="post" align="center" class="clearfix">
-        
+
+        <input class="creation customInput" type="text" name="titre" placeholder="Titre du cours" value="" required="required" />
+
+
+        <input class="creation customInput" type="textarea" name="objectif" value="" placeholder="Votre objectif içi" required="required"/>
+
         <label class="creation customLabel" for="Langage">Langage : </label>
+
         <select class="creation roll customInput" name="choixLangage" id="Langage">
             <option value="">Sélectionnez votre Langage</option>
             <option value="html">HTML</option>
@@ -20,18 +26,15 @@
             <option value="2">Connaissances générales</option>
             <option value="3">Aller plus loin</option>
         </select>
-        
-        <label class="creation customLabel" for="titre">Titre : </label>
-        <input class="creation customInput" type="text" name="titre" placeholder="Titre du cours" value="" id="titre" required="required" />
-        
-        <label class="creation customLabel" for="objectif">Objectif : </label>
-        <input class="creation customInput" type="textarea" name="objectif" value="" id="objectif" placeholder="Objectif de ce cours" required="required"/>
-    
-        <label class="creation customLabel" for="contenu">Contenu : </label>
-        <textarea id="contenu" class="moduleCreation" name="textBox">
+
+        <textarea id="fuck" class="moduleCreation" name="textBox">
         </textarea>
 
         <button type="submit" name="register" class="new-btn">Publier</button>
 
     </form>
 </div>
+<script src="public/scripts/jquery.min.js"></script>
+<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+<script src="public/scripts/prettify.min.js"></script>
+<script src="public/scripts/app.js"></script>

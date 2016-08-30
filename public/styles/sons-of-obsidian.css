@@ -28,7 +28,7 @@ pre.prettyprint {
 
 
 /* Specify class=linenums on a pre to get line numbering */
-ol.linenums { margin-top: 0; margin-bottom: 0; color: #AEAEAE; margin-left: 15px;} /* IE indents via margin-left */
+ol.linenums { margin-top: 0; margin-bottom: 0; color: #AEAEAE; margin-left: 15px; letter-spacing: 1px;} /* IE indents via margin-left */
 li[class^="L"]{
     list-style-type: decimal !important;
 }

@@ -20,7 +20,7 @@
 				var_dump($error);
 		}
 		else{
-			header("Location: index.php?page=cours&lang=$langage");
+			header("Location: index.php?page=bloc-cours&lang=$langage&cat=$categorie");
 			exit;
 		}
 	}
