@@ -3,19 +3,13 @@
 <div class="container">
     <h2>Modif</h2>
     <form method="post" align="center" class="clearfix">
-
     	<div><?= htmlentities($error) ?></div>
-
-    	<input type="hidden" value="<?= $id ?>" >
-		
+    	<input type="hidden" value="<?= $id ?>" >	
 		<label class="creation customLabel" for="titre">Titre :</label>
-        <input class="creation customInput" type="text" name="titre" placeholder="Titre du cours" id="titre" value="<?= $thisDbTab["title"] ?>" required="required" />
-		
+        <input class="creation customInput" type="text" name="titre" placeholder="Titre du cours" id="titre" value="<?= $thisDbTab["title"] ?>" required="required" />	
 		<label class="creation customLabel" for="objectif">Objectif du cours :</label>
         <input class="creation customInput" type="textarea" name="objectif" value="<?= $thisDbTab["goal"] ?>" placeholder="Votre objectif içi" id="objectif" required="required"/>
-
         <textarea class="moduleCreation" name="textBox"><?= htmlentities($thisDbTab["content"]) ?></textarea>
         <button type="submit" class="new-btn">Publier</button>
-
     </form>
 </div>
