@@ -1,14 +1,18 @@
 <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
-<!-- <script src="public/scripts/jquery.tinymce.min.js"></script>
-<script src="public/scripts/tinymce.min.js"></script> -->
-<script>tinymce.init({ selector:'textarea',autoresize_min_height: 350 });</script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+<script>tinymce.init({ selector:'textarea'});</script>
 <div class="container">
     <h2>Création</h2>
     <form method="post" align="center" class="clearfix">
 
-        <div><?= htmlentities($error)?></div>
+        <input class="creation customInput" type="text" name="titre" placeholder="Titre du cours" value="" required="required" />
+
+        <textarea class="moduleCreation" name="textBox">Easy (and free!) You should check out our premium features.</textarea>
+
+        <input class="creation customInput" type="textarea" name="objectif" value="" placeholder="Votre objectif içi" required="required"/>
 
         <label class="creation customLabel" for="Langage">Langage : </label>
+
         <select class="creation roll customInput" name="choixLangage" id="Langage">
             <option value="">Sélectionnez votre Langage</option>
             <option value="html">HTML</option>
@@ -18,6 +22,7 @@
         </select>
 
         <label class="creation customLabel" for="Categorie">Categorie : </label>
+
         <select class="creation roll customInput" name="choixCategorie" id="Categorie">
             <option value="">Sélectionnez votre Categorie</option>
             <option value="0" selected>introduction</option>
@@ -25,14 +30,6 @@
             <option value="2">Step 2</option>
             <option value="3">Step 3</option>
         </select>
-        
-        <label class="creation customLabel" for="titre">Titre :</label>
-        <input class="creation customInput" type="text" name="titre" placeholder="Titre du cours" id="titre" value="" required="required" />
-
-        <label class="creation customLabel" for="objectif">Objectif du cours :</label>
-        <input class="creation customInput" type="textarea" name="objectif" value="" placeholder="Votre objectif içi" id="objectif" required="required"/>
-
-        <textarea class="moduleCreation" name="textBox">Easy (and free!) You should check out our premium features.</textarea>
 
         <button type="submit" name="register" class="new-btn">Publier</button>
 
