@@ -2,6 +2,7 @@ tinymce.init({
 	plugins: "autoresize", 
 	forced_root_block:"",
 	selector:'#fuck'
+	remove_linebreaks : true,
 });
 
 $(function(){
