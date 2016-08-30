@@ -22,7 +22,7 @@ else
 	}	
 }
 
-$traitementList = ["creation", "login", "modif", "delete", "register"];
+$traitementList = ["creation", "login", "modif", "delete", "register","single"];
 if(in_array($page, $traitementList))
 {
 	require("controllers/traitement_".$page.".php");

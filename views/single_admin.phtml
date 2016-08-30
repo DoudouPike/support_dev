@@ -10,3 +10,11 @@
 <p class="p-date">Date création : <?= htmlentities($single["date"]) ?> // Date dernière modif : <?= htmlentities($single["date_last"]); ?></p>
 <a class="btn-in" href="index.php?page=modif&id=<?= $id ?>"><i class="fa fa-wrench icon-ms" aria-hidden="true"></i> Modifier</a>
 <a class="btn-in" href="index.php?page=delete&id=<?= $id ?>"><i class="fa fa-trash" aria-hidden="true"></i> Supprimer</a>
+
+<form method="POST" class="">
+	<div><?= htmlspecialchars($error) ?></div>
+	<input name="idLesson" type="hidden" value="<?= htmlentities($idPage) ?>"><!-- $_SESSION["user"]["name"] -->
+	<input name="author" type="text" placeholder="Pseudo" >
+	<textarea name="content" placeholder="Commentaire"></textarea>
+	<button type="submit" class="new-btn btnComm">Envoyer</button>
+</form>
