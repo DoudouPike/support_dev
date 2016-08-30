@@ -1,7 +1,7 @@
 tinymce.init({
 	plugins: "autoresize", 
 	forced_root_block:"",
-	selector:'textarea'
+	selector:'#fuck'
 });
 
 $(function(){
