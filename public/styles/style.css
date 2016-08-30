@@ -496,7 +496,7 @@ button.customButton {
 	margin-top: 100px;
 	padding: 100px;
 	background: #D4D5D6;
-	position: absolute;
+	/*position: absolute;*/
 	width: 100%;
 }
 
