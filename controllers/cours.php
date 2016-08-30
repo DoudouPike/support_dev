@@ -8,6 +8,7 @@
 	}
 	else
 	{
+		$error404 = "psk t tro con lol";
 		require("controllers/404.php");
 	}
 ?>

@@ -1,7 +1,6 @@
 <div class="clearfix">	
-	<h3 class="sous-cat"><?= htmlentities($category) ?></h3>
-	<a class="linkh" href="index.php?page=single&id=<?= htmlentities($id) ?>" >
-		<div class="box-sc">
+	<a href="index.php?page=single&lang=<?= htmlentities($lang) ?>&cat=<?= htmlentities($category) ?>&id=<?= htmlentities($id) ?>" class="linkh">
+		<div class="box-sc-out">
 			<p>
 				<i class="fa fa-code icon-cat" aria-hidden="true"></i>
 				 <?= htmlentities($title)?>
