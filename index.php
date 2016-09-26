@@ -1,6 +1,6 @@
 <?php
 session_start();
-$db = mysqli_connect("localhost", "root", "troiswa", "support_dev");
+$db = mysqli_connect("XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX");
 $error = "";
 $error404 = "";
 $page = "home";
